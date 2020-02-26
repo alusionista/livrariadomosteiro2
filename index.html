@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/180x180-round.png">
+  <!-- android icon -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon/192x192-round.png">
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/16x16.png">
+  <!-- ms icon -->
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/images/favicon/144x144-round.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" type="text/css" href="/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>Catálogo de Livros</title>
+</head>
+<body>
+  <a href="#" id="return-to-top" title="Ir para o topo da página"><i class="material-icons" style="transform: rotate(270deg);">arrow_forward_ios</i></a>
+  <nav class="dropdown">
+    <!--Hamburger-->
+    <div onclick="mobileNavbar()" class="dropbtn material-icons" >menu</div>
+    <div id="dropdown" class="dropdown-content">
+      <a href="#" class="clean-link">Início</a>
+      <a class="dd--active" href="#">Catálogo</a>
+      <a href="http://mosteirotrapista.org.br/index.php" class="clean-link" target="_blank">Site do Mosteiro</a>
+      <a href="https://caminhocisterciense.com/" class="clean-link" target="_blank">Blog</a>
+      <a href="#">Sobre</a>
+    </div>
+  </nav>
+  <nav class="navbar">
+    <!--End of Hamburger-->
+    <ul>
+      <li><a href="#" class="clean-link"><i class="material-icons">home</i></a></li>
+      <li><a href="#" class="li--active clean-link">Catálogo</a></li>
+      <li><a href="http://mosteirotrapista.org.br/index.php" class="clean-link" target="_blank">Site do Mosteiro</a></li>
+      <li><a href="https://caminhocisterciense.com/" class="clean-link" target="_blank">Blog</a></li>
+      <li><a href="#">Sobre</a></li>
+    </ul>
+  </nav>
+  <header>
+    <div class="bg-image" id="header">
+      <!--<img src="/images/header/index-header-image.jpg">-->
+      <div class="bg-text">
+        <h1>Livraria <span>do</span> Mosteiro</h1>
+        <div></div>
+        <h2>Abadia Trapista Nossa Senhora do Novo Mundo</h2>
+      </div>
+    </div>
+  </header>
+  <div id="tags">
+    <div id="tag001" class="auto-hide">Agustín Roberts</div>
+    <div id="tag002" class="auto-hide">Apoftegmas</div>
+    <div id="tag003" class="auto-hide">Apostolado</div>
+    <div id="tag004" class="auto-hide">Bento XVI</div>
+    <div id="tag005" class="auto-hide">Bernard McGinn</div>
+    <div id="tag006" class="auto-hide">Bernardo Bonowitz</div>
+    <div id="tag007" class="auto-hide">Bernardo de Claraval</div>
+    <div id="tag008" class="auto-hide">Columba Marmion</div>
+    <div id="tag009" class="auto-hide">Daniel-Rops</div>
+    <div id="tag010" class="auto-hide">David Tomlins</div>
+    <div id="tag011" class="auto-hide">Dietrich von Hildebrand</div>
+    <div id="tag012" class="auto-hide">Direção Espiritual</div>
+    <div id="tag013" class="auto-hide">Elredo de Rievaulx</div>
+    <div id="tag014" class="auto-hide">Étienne Gilson</div>
+    <div id="tag015" class="auto-hide">Eugene Boylan</div>
+    <div id="tag016" class="auto-hide">Gertrudes de Helfta</div>
+    <div id="tag017" class="auto-hide">Gregório de Nissa</div>
+    <div id="tag018" class="auto-hide">Gregório Magno</div>
+    <div id="tag019" class="auto-hide">Guilherme de St-Thierry</div>
+    <div id="tag020" class="auto-hide">Henri Nouwen</div>
+    <div id="tag021" class="auto-hide">Hildegarda de Bingen</div>
+    <div id="tag022" class="auto-hide">Jean Leclercq</div>
+    <div id="tag023" class="auto-hide">Jean-Baptiste Chautard</div>
+    <div id="tag024" class="auto-hide">João Cassiano</div>
+    <div id="tag025" class="auto-hide">José Eduardo Câmara</div>
+    <div id="tag026" class="auto-hide">Juliana de Norwich</div>
+    <div id="tag027" class="auto-hide">Lisa Bergman</div>
+    <div id="tag028" class="auto-hide">Liturgia</div>
+    <div id="tag029" class="auto-hide">Lucien Regnault</div>
+    <div id="tag030" class="auto-hide">Luiz Gonzaga de Carvalho</div>
+    <div id="tag031" class="auto-hide">Lutgarda de Aywières</div>
+    <div id="tag032" class="auto-hide">Michael Casey</div>
+    <div id="tag033" class="auto-hide">Missa Tradicional</div>
+    <div id="tag034" class="auto-hide">Místicas medievais</div>
+    <div id="tag035" class="auto-hide">Música litúrgica</div>
+    <div id="tag036" class="auto-hide">Olivier Clément</div>
+    <div id="tag037" class="auto-hide">Oração</div>
+    <div id="tag038" class="auto-hide">Padres Cistercienses</div>
+    <div id="tag039" class="auto-hide">Padres da Igreja</div>
+    <div id="tag040" class="auto-hide">Padres do Deserto</div>
+    <div id="tag041" class="auto-hide">Paul Delatte</div>
+    <div id="tag042" class="auto-hide">Pe. M. Raymond</div>
+    <div id="tag043" class="auto-hide">Peter Kwasniewski</div>
+    <div id="tag044" class="auto-hide">Pius Parsch</div>
+    <div id="tag045" class="auto-hide">Regra de São Bento</div>
+    <div id="tag046" class="auto-hide">Rod Dreher</div>
+    <div id="tag047" class="auto-hide">Romano Guardini</div>
+    <div id="tag048" class="auto-hide">Santas Cistercienses</div>
+    <div id="tag049" class="auto-hide">Santo Agostinho</div>
+    <div id="tag050" class="auto-hide">Santo Antão</div>
+    <div id="tag051" class="auto-hide">Santo Atanásio</div>
+    <div id="tag052" class="auto-hide">Santos Anjos</div>
+    <div id="tag053" class="auto-hide">Santos Fundadores de Cister</div>
+    <div id="tag054" class="auto-hide">São Pacômio</div>
+    <div id="tag055" class="auto-hide">Teologia</div>
+    <div id="tag056" class="auto-hide">Thomas Merton</div>
+    <div id="tag057" class="auto-hide">Vanderlei de Lima</div>
+    <div id="tag058" class="auto-hide">Vida de Santo Antão</div>
+    <div id="tag059" class="auto-hide">Vida de São Bento</div>
+    <div id="tag060" class="auto-hide">Vida Monástica</div>
+    <div id="tag061" class="auto-hide">Vidas dos Santos</div>
+    <div id="tag062" class="auto-hide">Votos Monásticos</div>
+  </div>
+  <main id="card">
+      <section>
+      <h2>Catálogo de Livros</h2>
+      <div>
+        <i>"Renovai-vos pela transformação espiritual de vossa inteligência"</i></br>Ef 4, 23-24
+      </div>
+    <p>A página O Caminho Cisterciense, juntamente com a Livraria do Mosteiro Trapista Nossa Senhora do Novo Mundo, desejam promover a boa literatura monástica e contemplativa, publicada atualmente em nosso país, com enfoque na tradição cisterciense.
+        Está nascendo assim a "Livraria do Mosteiro", que se propõe a divulgar e reunir essa literatura em um só lugar.
+        A forma de pagamento é via depósito bancário.</p>
+      
+      </section>
+      <div id="btnContainer">
+        <h3>Categorias</h3>
+        <div class="selectors">
+          <a class="btn active" onclick="filterSelection('all')">Mostrar todas</a>
+          <a class="btn" onclick="filterSelection('espiritualidade')">Espiritualidade</a>
+          <a class="btn" onclick="filterSelection('liturgia')">Liturgia</a>
+          <a class="btn" onclick="filterSelection('padres-cistercienses')">Padres Cistercienses</a>
+          <a class="btn" onclick="filterSelection('padres-da-igreja')">Padres da Igreja</a>
+          <a class="btn" onclick="filterSelection('padres-do-deserto')">Padres do Deserto</a>
+          <a class="btn" onclick="filterSelection('teologia')">Teologia</a>
+          <a class="btn" onclick="filterSelection('vida-monastica')">Vida Monástica</a>
+          <a class="btn" onclick="filterSelection('vidas-dos-santos')">Vida dos Santos</a>
+        </div>
+      </div>
+
+      <div class="buy-button" id="back-to-top"><a href="https://docs.google.com/forms/d/e/1FAIpQLSf8J2YHMcLFcHiCGcJZJA5t34FOm8fWMe0ifDRJIMc0e7mTeg/viewform?embedded=true" title="Fazer pedido de compra" target="_blank"><i class="material-icons">local_grocery_store</i>Fazer pedido de compra</a></div>
+      <div class="container" id="categorySelector">
+        <div class="filterDiv liturgia romano_guardini">
+          <div class="accordion-box">
+            <div id="bk-grid-1"><img src="/images/book_covers/0001.jpg"></div>
+            <div id="bk-grid-2"></div>
+            <div id="bk-grid-3">
+              <p class="name">Espírito da Liturgia</p>
+              <p class="author">Romano Guardini</p>
+              <p class="publisher">Cultor de Livros</p>
+              <p class="price">25,00</p>
+            </div>
+            <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+              <div class="accordion__panel">
+                <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+                <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+                <a id="tag028" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('liturgia')">Liturgia</a>
+                <a id="tag047" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('romano_guardini')">Romano Guardini</a>
+              </div>
+            </div>
+            <div class="end-line hr" id="bk-grid-4"></div>
+          </div>
+        </div>
+        
+        <div class="filterDiv espiritualidade  liturgia romano_guardini">
+          <div class="accordion-box">
+            <div id="bk-grid-1"><img src="/images/book_covers/0002.jpg"></div>
+            <div id="bk-grid-2"></div>
+            <div id="bk-grid-3">
+              <p class="name">Introdução à vida de oração</p>
+              <p class="author">Romano Guardini</p>
+              <p class="publisher">Cultor de Livros</p>
+              <p class="price">45,00</p>
+            </div>
+            <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+              <div class="accordion__panel">
+                <p>Nesta obra Romano Guardini fala ao drama do homem moderno que esmagado pelos afazeres e obrigações cotidianas se esquece de rezar ou acaba por “falta de tempo” relegando a oração a um segundo plano quando na verdade somente por meio da vida de oração e do crescimento espiritual é possível ordenar a vida com equilíbrio. É no recolhimento e cultivo da vida interior que o homem se torna capaz de compreender a vontade divina e a própria realidade. Além de reacender nos corações dos cristãos o desejo de buscar a Deus e a Sua presença o autor ensina a orar indicando os principais tipos de oração e discorrendo sobre as principais dificuldades com as quais o homem pode se deparar em sua vida interior sempre respeitando as peculiaridades de cada indivíduo.</p>
+                <p>"Guardini não queria conhecer algo ou muitas coisas mas, aspirava à verdade de Deus e à verdade sobre o homem." Papa Bento XVI</p>
+                <p>“Um inspirador guia de oração para todos nós! Altamente recomendado." Scott Hahn</p>
+                <a id="tag028" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('liturgia')">Liturgia</a>
+                <a id="tag047" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('romano_guardini')">Romano Guardini</a>
+              </div>
+            </div>
+            <div class="end-line hr" id="bk-grid-4"></div>
+          </div>
+        </div>
+        
+        <div class="filterDiv espiritualidade eugene_boylan">
+          <div class="accordion-box">
+            <div id="bk-grid-1"><img src="/images/book_covers/0003.jpg"></div>
+            <div id="bk-grid-2"></div>
+            <div id="bk-grid-3">
+              <p class="name">Amor Sublime</p>
+              <p class="author">Eugene Boylan</p>
+              <p class="publisher"> Cultor de Livros </p>
+              <p class="price"> 55,00 </p>
+            </div>
+            <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+              <div class="accordion__panel">
+                <p>Está fora da compreensão do espírito humano conhecer ou avaliar a profundidade da tristeza que encheu o coração de Nosso Senhor Jesus Cristo. Sabemos, porém, que sua tristeza teve origem no amor; no amor por Seu Pai tão ofendido pelos pecados, dos homens e no amor pelos homens, tão desamparados no meio dos seus pecados. Todos nós podemos repetir com São Paulo: "Ele me amou e se entregou por mim". Este é o fim destas páginas: mostrar-nos quais os projetos que Nosso Senhor tem a nosso respeito, e indicar-nos a forma de cooperarmos para que eles se cumpram.</p>
+                <p><strong>Do blog da Cultor de Livros:</strong></p>
+                <a href="http://www.cultor.com.br/2017/06/abandonar-se-em-deus.html"  target="_blank"><p><i>Abandonar-se em Deus</i></p></a>
+                <a href="http://www.cultor.com.br/2017/10/casamento-e-santidade.html"  target="_blank"><p><i>Casamento e Santidade</i></p></a>
+                <a id="tag015" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('eugene_boylan')">Eugene Boylan</a>
+              </p>              
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv espiritualidade eugene_boylan ">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0004.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">O Corpo Místico</p>
+            <p class="author">Eugene Boylan</p>
+            <p class="publisher"> Cultor de Livros </p>
+            <p class="price"> 30,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>"Permanecei em mim e eu permanecerei em vós. O ramo não pode dar fruto por si mesmo, se não permanecer na videira. Assim também vós: não podeis tampouco dar fruto, se não permanecerdes em mim" (Jo 15 4). A plena realização e a felicidade do homem estão na união sobrenatural com Deus, perdida com a queda. É preciso que nos unamos novamente a Ele, permanecendo firmes como os ramos na videira. Esta obra oferece uma exposição da doutrina sobre o Corpo Místico que com Cristo, formamos oferecendo fecundos caminhos de atuação para o cristão.</p>
+              <p><strong>Do blog da Cultor de Livros:</strong></p>
+              <a href="http://www.cultor.com.br/2017/09/por-que-ser-batizado.html"  target="_blank"><p><i>Por que ser batizado?</i></p></a>
+              <a href="http://www.cultor.com.br/2016/12/a-morte-fonte-da-vida.html"  target="_blank"><p><i>A morte, fonte da vida</i></p></a>
+              <a id="tag015" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('eugene_boylan')">Eugene Boylan</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv espiritualidade eugene_boylan  oracao">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0005.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">As Dificuldades da Oração</p>
+            <p class="author">Eugene Boylan</p>
+            <p class="publisher"> Cultor de Livros </p>
+            <p class="price"> 30,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>A intenção deste livro é ensinar a oração, "a única coisa necessária" (cf. Lc 10 42). Apoiando-se tanto em sua experiência pessoal como nos escritos dos santos, o autor trata de obstáculos como a falta de costume ou as distrações que atrapalham a alma em oração, que o cristão - religioso, sacerdote ou leigo - encontra na sua vida de diálogo e intimidade com Deus, sugerindo conselhos práticos para a vitória sobre cada um deles.</p>
+              <a id="tag015" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('eugene_boylan')">Eugene Boylan</a>
+              <a id="tag037" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('oracao')">Oração</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv vida-monastica ">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0006.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">A mulher, a monja e a mística cisterciense </p>
+            <p class="author">Monges e Monjas cistercienses</p>
+            <p class="publisher"> Cultor de Livros </p>
+            <p class="price"> 20,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>"As grandes monjas místicas da nossa Ordem Cisterciense ainda despertam – graças a Deus – sadia curiosidade nos homens e mulheres de hoje devido à sua busca incessante de união com Deus e de serviço à humanidade sofredora."</p>
+              <p>Este livro ajuda a saciar tal curiosidade santa ao reunir, em português, quatro importantes Conferências proferidas, na Europa, sobre a mulher, a monja e a mística cisterciense. Tais Exposições foram feitas por monjas e monges e vêm, aqui, enriquecidas com bela introdução e oportunas notas do tradutor brasileiro, frei Vanderlei de Lima, eremita de Charles de Foucauld, na Diocese de Amparo (SP), e, de longa data, amigo da nossa Ordem.</p>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv padres-cistercienses vida-monastica elredo_de_rievaulx ">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0007.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Amizade espiritual - Oração pastoral</p>
+            <p class="author">Elredo de Rievaulx</p>
+            <p class="publisher"> Cultor de Livros </p>
+            <p class="price"> 25,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Em Amizade Espiritual, Aelredo de Riveaulx, monge e abade cisterciense contemporâneo de São Bernardo de Claraval, faz um belo ensaio sobre a amizade. Qual a natureza e a origem da amizade? Como escolher um verdadeiro amigo? Como ser um verdadeiro amigo? A estas e outras perguntas Aelredo responde inspirado pela sabedoria dos antigos iluminado pelas Sagradas Escrituras e com os olhos fixos na verdadeira razão da amizade: ser uma escada que conduz ao Céu. Já a pequena obra Oração pastoral foi escrita pelo autor provavelmente no final de sua vida. É um texto breve, mas denso e que segundo alguns se apresenta como um resumo da sua vida espiritual. Essa obra revela algumas das características cativantes do abade de Riveaulx: ternura benevolência mansidão honestidade e afeto cordial.</p>
+              <a id="tag013" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('elredo_de_rievaulx')">Elredo de Rievaulx</a>
+              <a id="tag038" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('padres_cistercienses')">Padres Cistercienses</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv padres-cistercienses vida-monastica elredo_de_rievaulx ">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0008.png"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">O Espelho da caridade</p>
+            <p class="author">Elredo de Rievaulx</p>
+            <p class="publisher">Cultor de Livros</p>
+            <p class="price"> 50,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Esta obra se apresenta como o coração da doutrina de Aelredo de Rievaulx, monge cisterciense do século XII. O título indica que se trata de um tratado sobre a prática da perfeição cristã. Como se usasse um espelho, Aelredo ensina aos monges o discernimento necessário a respeito dos diferentes graus da caridade em suas almas. Aelredo buscou coordenar a verdade da fé, a necessidade da criatura e a dinâmica relacional, quando, na obediência a Bernardo de Claraval, decidiu escrever para o bem dos monges que lhe foram confiados.</p>
+              <p>A obra se divide em três partes: a primeira, sobre a excelência da caridade; a segunda, sobre o discernimento necessário e os frutos da caridade; e, finalmente, a terceira, sobre a prática da caridade nas relações.</p>
+              <a id="tag013" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('elredo_de_rievaulx')">Elredo de Rievaulx</a>
+              <a id="tag038" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('padres_cistercienses')">Padres Cistercienses</a>
+              <a id="tag060" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('vida_monastica')">Vida Monástica</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv vida-monastica columba_marmion">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0009.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Sponsa Verbi - A virgem consagrada ao Senhor</p>
+            <p class="author">Columba Marmion, OSB</p>
+            <p class="publisher"> Cultor de Livros </p>
+            <p class="price"> 25,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Por meio da sua consagração religiosa a virgem torna-se esposa de Cristo. Inspirado pela leitura do comentário de São Bernardo ao Cântico dos Cânticos Columba Marmion procura nas conferências reunidas nesta obra indicar as condições requeridas para uma alma se tornar Sponsa Verbi, a esposa do Verbo. São instruções que, além de avivar nas virgens consagradas a consciência da sua eminente dignidade devida a tão sublime vocação, também buscam alcançar outras almas que para se desposarem com Cristo apenas esperam a ocasião de lhes ser plenamente revelado o ideal a que secretamente aspiram e que nestas páginas lhes será desvelado.</p>
+              <a id="tag008" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('columba_marmion')">Columba Marmion</a>
+              <a id="tag060" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('vida_monastica')">Vida Monástica</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv espiritualidade jean-baptiste_chautard apostolado">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0010.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">A alma de todo apostolado</p>
+            <p class="author">D. Jean-Baptiste Chautard, OCSO</p>
+            <p class="publisher"> Cultor de Livros </p>
+            <p class="warning">Ainda não disponível</p><!--<p class="price"> 50,00 </p>-->
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>O cristão não é bom cristão se não tiver uma presença ativa no meio dos homens. A vida de um cristão não tem sentido se não cumpre o mandato de Cristo de aproximar outros homens de Deus. No entanto o autor mostra nesta obra que o apostolado de nada adianta quando se descuida da própria alma. Segundo Paulo VI “o apostolado é um fenômeno de exuberância espiritual e pessoal... Não pode ser verdadeiro apóstolo quem não tem uma vida interior profunda e ardente”.</p>
+              <p>"Ao nosso estimado filho Dom J. B. Chautard abade da Trapa de nossa Senhora de Sept-Fons. Enviamos as nossas mais calorosas felicitações por ter posto em evidência de maneira admirável no seu livro intitulado L’Âme de Tout Apostolat a necessidade da vida interior nos homens de obras para a verdadeira fecundidade do seu ministério". Papa Bento XV, 1915</p>
+              <a id="tag023" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('jean-baptiste_chautard')">Jean-Baptiste Chautard</a>
+              <a id="tag003" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('apostolado')">Apostolado</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv liturgia pius_parsch missa_tradicional">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0011.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Para entender a Missa</p>
+            <p class="author">Pius Parsch</p>
+            <p class="publisher"> Cultor de Livros </p>
+            <p class="price"> 35,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Neste clássico de Pius Parsch, importante figura do Movimento Litúrgico, o leitor encontrará uma clara explicação do significado e das partes da Santa Missa na Forma Extraordinária. A obra traz também a Carta Apostólica “Motu Proprio” Summorum Pontificum assinada por Bento XVI.</p>
+              <p>“O augusto Sacrifício do Altar é o ato fundamental do culto divino; é necessário por isso que ele seja a fonte o centro da piedade cristã”. Assim se expressa Pio XII em sua memorável encíclica Mediator Dei chamando a atenção de todos os fiéis para o seu principal dever e para a sua suma dignidade: a participação do “Santo Sacrifício Eucarístico não como uma assistência passiva negligente e distraída mas com tal empenho e fervor que os ponha em contato íntimo com o Sumo Sacerdote como diz o Apóstolo: Tende em vós os mesmos sentimentos que Jesus Cristo experimentou (Fl 25) oferecendo-se com Ele e por Ele santificando-se com Ele.”</p>
+              <p><strong>Do blog da Cultor de Livros:</strong></p>
+              <a href="http://www.cultor.com.br/2019/02/o-que-significa-missa.html"  target="_blank"><p><i>O que significa a Missa</i></p></a>
+              <a id="tag044" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('pius_parsch')">Pius Parsch</a>
+              <a id="tag028" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('liturgia')">Liturgia</a>
+              <a id="tag033" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('missa_tradicional')">Missa Tradicional</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv espiritualidade-  dietrich_von_hildebrand'">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0012.png"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">A nossa transformação em Cristo</p>
+            <p class="author">Dietrich von Hildebrand</p>
+            <p class="publisher"> Cultor de Livros </p>
+            <p class="price"> 55,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>"Deus nos chamou para nos tornar ‘homens novos’ em Jesus Cristo. Pelo batismo Ele confere-nos uma nova vida sobrenatural faz-nos participantes da sua existência. Esta obra nos ajuda a compreender que esta vida porém não deve jazer escondida como um segredo no mais íntimo da nossa alma; deve determinar a transformação de toda a nossa personalidade". Dietrich von Hildebrand um dos principais teólogos cristãos de seu tempo e considerado por Pio XII como doutor da Igreja do século XX apresenta-nos com profundidade e clareza o caminho a ser trilhado por todos aqueles que queiram transformar-se em Cristo e identificar-se com Ele deixando-se formar pela graça e lutando para crescer em virtudes.</p>
+              <p>"Uma grande contribuição para a única questão que importa: a transformação da nossa alma em Cristo." Venerável Fulton Sheen</p>
+              <p>"Estou pessoalmente convencido de que quando em algum momento no futuro a história intelectual da Igreja Católica no século XX for escrita o nome de Dietrich von Hildebrand será a mais proeminente entre as figuras de nosso tempo". Cardeal Ratzinger</p>
+              <a id="tag011" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('dietrich_von_hildebrand')">Dietrich von Hildebrand</a>
+
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv padres-cistercienses vida-monastica  gertrudes_de_helfta vanderlei_de_lima santas_cistercienses misticas_medievais">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0013.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Recorramos a Santa Gertrudes de Helfta </p>
+            <p class="author">Vanderlei de Lima</p>
+            <p class="publisher"> Cultor de Livros </p>
+            <p class="warning">Ainda não disponível</p><!--<p class="price"> ### </p>-->
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Este livro aparece em um tempo no qual Santa Gertrudes volta a ser lembrada e que muito se fala também na mensagem importante por ela difundida: a misericórdia de Deus emanada do Sagrado Coração de Jesus quer chegar a todos os homens e mulheres da terra neste século XXI, tão cheio de fortes tribulações nas várias áreas do viver. E nisso o livro muito pode ajudar.</p>
+              <p>O autor deste trabalho é um eremita de Charles de Foucauld, professor universitário, escritor, estudioso sério da fé católica que, sempre na fidelidade ao Magistério da Igreja, busca ajudar o próximo a melhor compreender a fé que professa por meio de seus artigos em jornais, sites e blogs diversos, destacando-se site "Aleteia" e o blog  "Refletindo 7".</p>
+              <a id="tag016" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('gertrudes_de_helfta')">Gertrudes de Helfta</a>
+              <a id="tag057" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('vanderlei_de_lima')">Vanderlei de Lima</a>
+              <a id="tag048" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('santas_cistercienses')">Santas Cistercienses</a>
+              <a id="tag034" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('misticas_medievais')">Místicas medievais</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv padres-cistercienses vida-monastica guilherme_de_st-thierry">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0014.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Carta de Ouro </p>
+            <p class="author">Guilherme de St-Thierry</p>
+            <p class="publisher"> Ecclesiae </p>
+            <p class="price"> 44,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>O Bem-aventurado Guilherme de St. Thierry escreveu estas instruções de vida interior, por volta de 1144, para os noviços da recém-fundada cartuxa de Mont-Dieu, na região de Ardennes, na França.</p>
+              <a id="tag019" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('guilherme_de_st-thierry')">Guilherme de St-Thierry</a>
+              <a id="tag038" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('padres_cistercienses')">Padres Cistercienses</a>
+              <a id="tag060" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('vida_monastica')">Vida Monástica</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv padres-cistercienses bernardo_de_claraval bernardo_bonowitz">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0015.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">São Bernardo, o Numerólogo</p>
+            <p class="author">D. Bernardo Bonowitz, OCSO</p>
+            <p class="publisher"> Ecclesiae </p>
+            <p class="price"> 32,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>“Por sua leitura cuidadosa e perspicaz deste grande Doutor da Igreja, Dom Abade Bernardo Bonowitz nos abre novas maneiras de compreender e apreciar as riquezas desse grande Padre Cisterciense. Sente-se a paixão de São Bernardo na maneira como o Abade Bernardo traz à tona a riquíssima percepção espiritual deste grande Santo. Bernardo de Clavaral falou e escreveu para a sua própria comunidade monástica, procurando revelar aos seus monges algo dos mistérios eternos de Deus. </br>
+                No entanto, ele fez isso de uma maneira que demonstrou a clara aplicação de seus ensinamentos à vida cotidiana de seus discípulos. Suas percepções místicas geraram conselhos e aplicações práticas para se viver a vida espiritual seriamente — e até mesmo apaixonadamente.” Abade Gregory Polan, O.S.B. (adaptado do Prefácio)
+              </p>
+              <a id="tag007" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('bernardo_de_claraval')">Bernardo de Claraval</a>
+              <a id="tag006" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('bernardo_bonowitz')">Bernardo Bonowitz</a>
+              <a id="tag038" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('padres_cistercienses')">Padres Cistercienses</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv padres-cistercienses vidas-dos-santos santas_cistercienses misticas_medievais thomas_merton lutgarda_de_aywieres ">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0016.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">O que são estas chagas?</br>A vida da mística cisterciense Santa Lutgarda de Aywières</p>
+            <p class="author">Thomas Merton</p>
+            <p class="publisher"> Ecclesiae </p>
+            <p class="price"> 43,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Neste livro, Thomas Merton traça uma biografia da mística cisterciense do século XII Santa Lutgarda de Aywières, a partir de uma outra antiga biografia dela escrita pelo frade dominicano Tomás de Cantimpré, aluno de Santo Alberto Magno e companheiro de estudos de Santo Tomás de Aquino.</p>
+              <p>A vida de Santa Lutgarda é mística no sentido mais extraordinário que se possa imaginar: visões, êxtases, estigmas, profecias e milagres atrás de milagres.</p>
+              <a id="tag056" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('thomas_merton')">Thomas Merton</a>
+              <a id="tag031" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('lutgarda_de_aywieres')">Lutgarda de Aywières</a>
+              <a id="tag048" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('santas_cistercienses')">Santas Cistercienses</a>
+              <a id="tag034" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('misticas_medievais')">Místicas medievais</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv espiritualidade oracao thomas_merton">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0017.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">A oração contemplativa</p>
+            <p class="author">Thomas Merton</p>
+            <p class="publisher"> Ecclesiae </p>
+            <p class="price"> 39,90 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>A oração contemplativa é, de certo modo, simplesmente a preferência pelo deserto, pelo vazio, pela pobreza. Alguém começa a conhecer o sentido da contemplação quando, intuitiva e espontaneamente, procura o caminho obscuro e desconhecido da aridez, de preferência a qualquer outro. O contemplativo é alguém que escolhe antes o não saber do que o saber. Antes não fruir do que fruir. Antes não ter provas de que Deus o ama. Aceita o amor de Deus na fé, num desafio a toda evidência aparente. Essa é a condição necessária - e uma condição muito paradoxal - para a experiência mística da realidade da presença de Deus e de seu amor por nós. Somente quando somos capazes de "largar" tudo o que há dentro de nós, todo desejo de ver, de saber, de provar e de experimentar a presença de Deus, é que nos tornamos realmente capazes de ter a experiência dessa presença com a convicção e a realidade avassaladoras que revolucionam nossa existência inteira.</p>
+              <p><strong>Sobre o autor:</strong></br>
+                Um dos mais influentes autores da espiritualidade católica, Thomas Merton foi monge trapista na Abadia de Nossa Senhora do Getsêmani, EUA. Escreveu mais de 70 livros e centenas de poemas e artigos sobre a espiritualidade monástica e também sobre a vida dos santos católicos. Nasceu em Prades, França, no dia 31 de janeiro de 1915 e morreu em Bangcoc, no dia 10 de dezembro de 1968.
+                <a id="tag056" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('thomas_merton')">Thomas Merton</a>
+                <a id="tag037" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('oracao')">Oração</a>
+              </p>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv vida-monastica david_tomlins michael_casey regra_de_sao_bento">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0018.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Introdução à Regra de São Bento</p>
+            <p class="author">David Tomlins e Michael Casey, OCSO</p>
+            <p class="publisher"> Ecclesiae </p>
+            <p class="price"> 52,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>A Regra de São Bento nunca foi pensada como sendo a expressão final e definitiva de seu pensamento sobre a vida monástica. Trata-se, antes, de uma compilação eficiente de diretivas que lhe parecia necessário explicitar na situação na qual vivia. Alguns elementos são necessariamente locais e adaptados para seu próprio tempo; alguns elementos permanentes podem ter recebido pouca proeminência na Regra por serem bem compreendidos e não precisarem de ênfase.</br>
+                Para compreender a Regra, portanto, é necessário vê-la como parte de uma tradição contínua. Bento escreveu a fim de que a tradição pudesse se tornar uma realidade viva na situação na qual ele e seus contemporâneos viveram. Ele estava tentando fazer no seu meio aquilo que Antão, Agostinho, Basílio, Cassiano e Pacômio estavam fazendo nos deles.
+                Portanto, é importante que a obra escrita de Bento seja vista dentro do contexto de todo o programa monástico de formulação de princípios para a vivência evangélica.
+                </p>
+                <a id="tag010" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('david_tomlins')">David Tomlins</a>
+                <a id="tag032" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('michael_casey')">Michael Casey</a>
+                <a id="tag045" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('regra_de_sao_bento')">Regra de São Bento</a>
+              </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv vida-monastica rod_dreher">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0019.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">A Opção Beneditina </p>
+            <p class="author">Rod Dreher</p>
+            <p class="publisher"> Ecclesiae </p>
+            <p class="price"> 54,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Apoiando-se na vida e obra de São Bento, que respondeu ao colapso da civilização romana fundando uma ordem monástica, o Autor propõe algo semelhante, uma espécie de recolhimento estratégico baseado na autoridade das Escrituras e na sabedoria da Tradição da Igreja. O objetivo é apartar-se da cultura neopagã atual para construir uma contra-cultura genuinamente cristã que possa superar a decadência cada vez mais profunda da nossa civilização.</p>
+              <p>A vida cristã tornou-se incompatível com os valores seculares atuais, por isso é preciso chegar a soluções criativas e comunitárias que ajudem os cristãos a manter a fé em um mundo cada vez mais hostil. Portanto, segundo Dreher, “a Opção Beneditina é um chamado a assumirmos a longa e obstinada tarefa de trazer o mundo real de volta da fantasia, da artificialidade, da alienação e da atomização típicas da vida moderna”.</p>
+              <p><strong>Sobre o autor:</strong></br>
+              Rod Dreher é um jornalista e escritor norte-americano. Foi criado numa família metodista, converteu-se ao catolicismo e depois tornou-se ortodoxo. Atualmente é editor da revista The American Conservative e se dedica à promoção do ideal da “opção beneditina”. 
+              </p>
+              <a id="tag046" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('rod_dreher')">Rod Dreher</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv liturgia missa_tradicional lisa_bergman">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0020.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Tesouro da Tradição: Guia da Missa Tradicional</p>
+            <p class="author">Lisa Bergman</p>
+            <p class="publisher"> Ecclesiae </p>
+            <p class="warning">Ainda não disponível</p><!--<p class="price"> ### </p>-->
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Este guia é uma introdução geral ao Rito Romano Tradicional que abrange minuciosamente os detalhes contidos na liturgia da Missa na Forma Extraordinária, como a sua origem e finalidade, os aspetos da ornamentação do altar e dos paramentos sacerdotais, além de informações e ensinamentos úteis para que os fiéis possam se preparar para viver tão sublime Ação Sagrada. </br>
+                O Ordinário da Missa vem acompanhado de comentários com informações históricas e teológicas, além de fotos e ilustrações que documentam o que se passa no altar em cada parte da celebração.
+                </p>
+                <a id="tag028" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('liturgia')">Liturgia</a>
+                <a id="tag033" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('missa_tradicional')">Missa Tradicional</a>
+                <a id="tag027" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('lisa_bergman')">Lisa Bergman</a>
+              </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv liturgia missa_tradicional peter_kwasniewski">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0021.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Ressurgente em meio à crise</p>
+            <p class="author">Peter Kwasniewski</p>
+            <p class="publisher"> Ecclesiae </p>
+            <p class="warning">Ainda não disponível</p><!--<p class="price"> ### </p>-->
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Peter Kwasniewski faz uma reflexão lúcida e realista da confusão litúrgica estabelecida desde o Concílio Vaticano II, e que abriu precedentes para uma onda de sucessivas novidades teológicas e diversas experimentações na Liturgia. Como reconheceu o Papa Bento XVI, tal confusão gerou uma séria crise, por isso, segundo Kwasniewski é necessária uma reflexão teológica e filosófica tanto sobre o reflorescimento do Rito Tradicional, como sobre a forma pela qual o rito extraordinário pode ajudar a enriquecer a Liturgia como um todo. Para além do diagnóstico do que vai mal e dos erros que reclamam correções, a obra de Kwasniewski pretende ser também uma contribuição ao “novo movimento litúrgico” inspirado pelo Papa Bento XVI e à grande renovação eclesiástica que ele colocou em marcha”.
+                <p><strong>Sobre o autor:</strong></br>
+                Peter Kwasniewski é doutor pela Catholic University of America, lecionou no International Theological Institute e no Programa Austríaco da Universidade Franciscana de Steubenville. Fez parte da equipe fundadora do Wyoming Catholic College, onde atualmente é professor e diretor de coro.</p>
+                <a id="tag028" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('liturgia')">Liturgia</a>
+                <a id="tag033" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('missa_tradicional')">Missa Tradicional</a>
+                <a id="tag043" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('peter_kwasniewski')">Peter Kwasniewski</a>
+              </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv liturgia bento_xvi musica_liturgica">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0022.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">O Espírito da Música</p>
+            <p class="author">Bento XVI</p>
+            <p class="publisher"> Ecclesiae </p>
+            <p class="warning">Ainda não disponível</p><!--<p class="price"> ### </p>-->
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Este livro é sobre a relação entre música e liturgia, sobre o lugar que a primeira ocupa na segunda, bem como sobre os princípios e os fins da música litúrgica verdadeiramente apropriada ao serviço e ao louvor a Deus. Nele, o Papa Bento XVI destrincha com admirável espírito de distinção os componentes da verdadeira música litúrgica e abre caminho para a urgente resolução da dicotomia “utilitário x transcendente”, que no campo da musicalização do culto a Deus se apresenta como “música pastoral x arte pela arte”.</p>
+              <a id="tag004" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('bento_xvi')">Bento XVI</a>
+              <a id="tag028" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('liturgia')">Liturgia</a>
+              <a id="tag035" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('musica_liturgica')">Música litúrgica</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv liturgia musica_liturgica santo_agostinho">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0023.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Sobre a música</p>
+            <p class="author">Santo Agostinho</p>
+            <p class="publisher"> Ecclesiae </p>
+            <p class="price"> 53,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Este tratado sobre a música divide-se em duas partes: a primeira, mais técnica, contém uma exposição completa das regras da rítmica e da métrica; ela compreende os cinco primeiros livros. A outra, mais filosófica, forma de certo modo a moral da obra; o autor analisa, aí, os movimentos do coração e do espírito humanos, os movimentos dos corpos e do universo, remontando de harmonia em harmonia, como que por meio de uma escadaria mística, até chegar à harmonia eterna e imutável, Deus, princípio de todos os movimentos e autor da lei que os submete à ordem — em outras palavras, o autor da harmonia em todos os graus.</br>
+                Desse ponto de vista elevado, Agostinho medita levando em conta todos os movimentos da alma e do corpo, sempre harmoniosos, ainda que em diferentes graus, pois que são uma conseqüência das leis divinas. E ele convida a alma a ascender, de beleza em beleza, até aquela soberana, liberando-se pouco a pouco dos entraves da mortalidade.
+                </p>
+                <a id="tag049" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('santo_agostinho')">Santo Agostinho</a>
+                <a id="tag035" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('musica_liturgica')">Música litúrgica</a>
+              </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv padres-do-deserto vida-monastica vidas-dos-santos padres-da-igreja santo_antao santo_atanasio vida_de_santo_antao">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0024.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Vida e conversão de Santo Antão</p>
+            <p class="author">Santo Atanásio</p>
+            <p class="publisher"> Ecclesiae </p>
+            <p class="price"> 30,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>“Vocês me pediram um relato sobre a vida de Santo Antão: querem saber como chegou à vida ascética. Pensam modelar suas vidas segundo o zelo da dele. Muito me alegro em aceitar esse pedido, pois também eu tiro real proveito e ajuda da simples lembrança de Antão, e pressinto que também vocês, depois de ouvida a história, não só admirarão o homem, mas quererão emular sua resolução, quanto lhes seja possível. Realmente, para monges, a vida de Antão é modelo ideal de vida ascética. Apresso-me a escrever o que sei — porque o vi com freqüência —, e o que pude aprender daquele que foi seu companheiro por largo tempo e lhe vertia água nas mãos. Do começo ao fim considerei escrupulosamente a verdade: não quero que alguém recuse crer por lhe parecer excessivo o que ouviu, nem que considere menos a esse homem tão santo, por não lhe parecer suficiente o que tenha sabido” (Prólogo - Santo Atanásio).</p>
+              <a id="tag050" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('santo_antao')">Santo Antão</a>
+              <a id="tag051" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('santo_atanasio')">Santo Atanásio</a>
+              <a id="tag058" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('vida_de_santo_antao')">Vida de Santo Antão</a>
+              <a id="tag040" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('padres_do_deserto')">Padres do Deserto</a>
+              <a id="tag060" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('vida_monastica')">Vida Monástica</a>
+              <a id="tag061" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('vidas_dos_santos')">Vidas dos Santos</a>
+              <a id="tag039" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('padres_da_igreja')">Padres da Igreja</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv padres-da-igreja gregorio_de_nissa">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0025.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Vida de Moisés</p>
+            <p class="author">São Gregório de Nissa</p>
+            <p class="publisher"> Ecclesiae </p>
+            <p class="price"> 34,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>“Talvez a história destes homens ilustres tenha sido escrita detalhadamente para isto: para que a vida dos que vêm depois se dirija para o bem imitando as coisas que foram feitas precedentemente com retidão. Tomemos Moisés como modelo de vida: primeiro, recorreremos sua vida conforme a conhecemos pela Escritura, e depois buscaremos o significado espiritual correspondente à história. Assim conheceremos em que consiste para os homens a vida perfeita”.</p>
+              <a id="tag017" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('gregorio_de_nissa')">Gregório de Nissa</a>
+              <a id="tag039" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('padres_da_igreja')">Padres da Igreja</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv espiritualidade jose_eduardo_camara santos_anjos">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0026.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Os anjos na vida dos santos</p>
+            <p class="author">José Eduardo Câmara</p>
+            <p class="publisher"> Ecclesiae </p>
+            <p class="warning">Ainda não disponível</p><!--<p class="price"> ### </p>-->
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Este livro reúne algumas meditações acerca do Ministério dos Santos Anjos, em particular do Anjo da Guarda. Nas histórias narradas, aparecem inúmeros relatos de intervenções angélicas, surpreendentes e extraordinárias. Esses dons que Deus derramou em seus santos para edificação da Igreja, nos servem como sinal sensível da realidade da Fé.</p>
+              <p>São 31 meditações sobre a presença e atuação dos anjos na vida dos santos. No final de cada meditação, o autor sugere um Propósito para o dia, que reforça a meditação e nos ajuda a viver melhor o nosso chamado à santidade.</p>
+              <a id="tag025" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('jose_eduardo_camara')">José Eduardo Câmara</a>
+              <a id="tag052" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('santos_anjos')">Santos Anjos</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv espiritualidade teologia padres-cistercienses vida-monastica bernardo_de_claraval etienne_gilson">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0027.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">A Teologia Mística de São Bernardo</p>
+            <p class="author">Étienne Gilson</p>
+            <p class="publisher"> Paulus </p>
+            <p class="price"> 65,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Étienne Gilson se propõe aqui resumir o aspecto menos estudado da mística cisterciense: aquilo a que se poderia chamar sua sistemática.</p>
+              <p>"Bernardo não foi de modo algum um metafísico, mas também deverá permanecer para nós um teólogo cujo poder de síntese e vigor especulativo o colocam entre os maiores. Sem dúvida, sua teologia mística é essencialmente a ciência de uma prática, mas espero mostrar que é exatamente uma ciência e que era difícil levar mais adiante o rigor da síntese. Contudo, para compreendê-lo, é preciso esperar com paciência pelo discernimento de seus princípios, depois do que tudo se esclarece. Uma vez conhecidos os princípios e a linguagem do autor, seus tratados, e mesmo seus sermões, se explicam com exatidão e técnica comparáveis às de Santo Anselmo ou São Tomás de Aquino. Ninguém cometerá o erro de esquecer a alma do místico; penso que a conheceremos melhor, ao contrário, se, no futuro, esquecermos menos o pensamento do teólogo."
+              </p>
+              <a id="tag014" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('etienne_gilson')">Étienne Gilson</a>
+              <a id="tag007" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('bernardo_de_claraval')">Bernardo de Claraval</a>
+              <a id="tag038" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('padres_cistercienses')">Padres Cistercienses</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv espiritualidade misticas_medievais juliana_de_norwich ">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0028.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Revelações do Amor Divino</p>
+            <p class="author">Juliana de Norwich</p>
+            <p class="publisher"> Paulus </p>
+            <p class="price"> 52,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>As Revelações do Amor Divino foram escritas a partir de dezesseis revelações (ou visões), recebidas por Juliana de Norwich, mística do século XV, cujos relatos se inserem na tradicional mística medieval inglesa, de autores como Richard Rolle e Margery Kempe. Seus relatos denotam a aflição típica da provação dos místicos, mas também grande alegria e êxtase pela sua especial condição, e discorrem sobre inúmeros aspectos religiosos e teológicos, tais como o mistério da divindade e da Trindade, o amor de Deus, o conceito de pecado e de alma e a metáfora de Jesus como nossa mãe.</p>
+              <a id="tag026" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('juliana_de_norwich')">Juliana de Norwich</a>
+              <a id="tag034" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('misticas_medievais')">Místicas medievais</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv vida-monastica jean_leclercq">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0029.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">O Amor às Letras e o Desejo de Deus</p>
+            <p class="author">Jean Leclercq</p>
+            <p class="publisher"> Paulus </p>
+            <p class="price"> 69,90 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Este é um livro de iniciação aos autores monásticos da Idade Média dirigido a estudantes. Publicado pela primeira vez em 1957, impôs-se como um clássico não só pela solidez das informações e acuidade das percepções, mas também pela autenticidade da atitude intelectual que traduz: rigor científico e interesse por um saber aberto sobre as questões essenciais da existência humana. Dividida em  três partes, a obra é composta por uma série de lições dadas a jovens monges do Instituto de Estudos Monásticos do mosteiro de Santo Anselmo, em Roma, durante o inverno de 1956-1957.</p>
+              <a id="tag022" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('jean_leclercq')">Jean Leclercq</a>
+              <a id="tag060" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('vida_monastica')">Vida Monástica</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv teologia  misticas_medievais hildegarda_de_bingen">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0030.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Scivias: Conhece os Caminhos do Senhor</p>
+            <p class="author">Hildegarda de Bingen</p>
+            <p class="publisher"> Paulus </p>
+            <p class="price"> 130,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Scivias, a obra religiosa mais importante da santa e doutora da Igreja Hildegarda de Bingen, compõe-se de vinte e seis visões, que são primeiramente escritas de maneira literal, tal como ela as teve, sendo, a seguir, explicadas exegeticamente. Alguns dos tópicos presentes nas visões são a caridade de Cristo, a natureza do universo, o reino de Deus, a queda do ser humano, a santificação e o fi m do mundo. Ênfase especial é dada aos sacramentos do matrimônio e da eucaristia, em resposta à heresia cátara. Como grupo, as visões formam uma summa teológica da doutrina cristã. No final de Scivias, encontram-se hinos de louvor e uma peça curta, provavelmente um rascunho primitivo de Ordo virtutum, a primeira obra de moral conhecida. Hildegarda é notável por ser capaz de unir "visão com doutrina, religião com ciência, júbilo carismático com indignação profética, e anseio por ordem social com a busca por justiça social". Este livro elucida a vida das mulheres medievais, e é um exemplo impressionante de certa forma especial de espiritualidade cristã.</p>
+              <a id="tag021" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('hildegarda_de_bingen')">Hildegarda de Bingen</a>
+              <a id="tag034" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('misticas_medievais')">Místicas medievais</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv teologia bernard_mcginn">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0031.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">A Presença de Deus: Uma História da Mística Cristã Ocidental - Tomo I</p>
+            <p class="author">Bernard McGinn</p>
+            <p class="publisher">Paulus</p>
+            <p class="warning">Ainda não disponível</p><!--<p class="price"> ### </p>-->
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p><strong>Tomo I: As fundações da mística – Das origens ao século V</strong></p>
+              <p>Este volume é o primeiro de quatro dedicados à história e à teologia da mística cristã ocidental. Bernard McGinn busca um conhecimento mais completo e crítico da história da mística cristã, bem como avaliações teológicas contemporâneas mais completas e críticas do fenômeno. Para isso, ele organiza sua obra em duas partes — "As Raízes Históricas da Mística Ocidental" e "Os Primórdios da Mística Ocidental" — e um apêndice, no qual examina o estudo moderno da mística. De proporções enciclopédicas, o livro tem sido bem recebido pela crítica e demonstra ser a mais importante apresentação sinótica da tradição mística ocidental já feita.</p>
+              <a id="tag005" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('bernard_mcginn')">Bernard McGinn</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+
+      <div class="filterDiv teologia  padres_cistercienses bernardo_de_claraval daniel-rops">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0054.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">A Presença de Deus: Uma História da Mística Cristã Ocidental - Tomo II</p>
+            <p class="author">Bernard McGinn</p>
+            <p class="publisher">Paulus</p>
+            <p class="warning">Ainda não disponível</p><!--<p class="price"> ### </p>-->
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p><strong>Tomo II: O Desenvolvimento da Mística – De Gregório Magno até 1200</strong></p>
+              <p>O segundo volume desse estudo sobre mística guia o leitor pelo desenvolvimento desta de 500 d.C. até 1200 d.C. Após explorar as forças culturais que permitiram o crescimento das tradições místicas no início da Idade Média, o volume examina as contribuições do papa Gregório Magno, João Escoto Erígena e grandes contemplativos como Bernardo de Claraval. O autor demonstra que, embora a mística em geral sobressaísse à ênfase na ordem e na caridade, a tradição mística cristã medieval alcança todo o seu potencial numa variedade de expressões.</p>
+              <a id="tag009" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('daniel-rops')">Daniel-Rops</a>
+              <a id="tag007" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('bernardo_de_claraval')">Bernardo de Claraval</a>
+              <a id="tag038" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('padres_cistercienses')">Padres Cistercienses</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>      
+
+      <div class="filterDiv teologia bernard_mcginn ">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0055.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">A Presença de Deus: Uma História da Mística Cristã Ocidental - Tomo III</p>
+            <p class="author">Bernard McGinn</p>
+            <p class="publisher">Paulus</p>
+            <p class="warning">Ainda não disponível</p><!--<p class="price"> ### </p>-->
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p><strong>Tomo III: O Florescimento da Mística – Homens e Mulheres da Nova Mística (1200-1350)</strong></p>
+              <p>A terceira parte da série sobre história da mística cobre o misticismo franciscano e o aparecimento das primeiras místicas, com o mesmo detalhamento e minúcia das obras anteriores, tendo por base um extensivo estudo da literatura mística, que contém tais relatos. O autor apresenta místicas mais e menos conhecidas, narrando suas histórias e refletindo sobre os temas que surgem, o modo com o qual tudo foi registrado e o impacto de tais personalidades para o desenvolvimento da mística e da cristandade como um todo.</p>
+              <a id="tag005" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('bernard_mcginn')">Bernard McGinn</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv padres-cistercienses vida-monastica vidas-dos-santos bernardo_de_claraval daniel-rops">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0032.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Bernardo de Claraval - Testemunha do seu tempo perante Deus</p>
+            <p class="author">Daniel-Rops</p>
+            <p class="publisher"> Quadrante </p>
+            <p class="warning">Ainda não disponível</p><!--<p class="price"> ### </p>-->
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>São Bernardo (1090-1153, é uma figura ímpar que imprimiu a sua marca em todo o século XII. Homem franzino, de saúde débil, agravada pelas austeridades a que se entregou por amor à sua vocação para o exclusivo amor de Deus, viveu num tempo conturbado para o qual contribuíam a mistura do temporal com o espiritual, os primeiros embates entre fé e a razão, a degradação da Cúria romana e do episcopado, afeitos à ostentação. Acrescente-se a isso o relaxamento que tomara conta de um dos baluartes da fé que era a Ordem beneditina e que afetara um dos seus mais insignes mosteiros, o de Cluny.</p>
+              <p>Bernardo é o homem de proa que reanima e expande a Ordem de Cister, fundada décadas antes para revigorar o espírito de São Bento. Faz-se cisterciense, acompanhado - tal o seu poder de irradiação - por todos os irmãos homens, pelo tio e por colegas que perfazem um grupo de trinta noviços. E no mosteiro receberá bem cedo o encargo de fundar um novo convento, do qual será abade até o fim dos seus dias e pelo qual será conhecido: Claraval.</p>
+              <p>Neste livro surgem-nos a vida e os feitos daquele que seria considerado o "último Padre da Igreja" e Doctor egregius.</p>
+              <p>De tantos aspectos que se poderiam destacar deste Santo, o autor sublinha a equilibrada conjunção de uma alma mística e de um homem de ação. Bernardo é o puro contemplativo que, no entanto, se ausenta do claustro para batalhar pela ortodoxia na doutrina da fé, para pacificar conflitos entre os poderosos e para imprimir ardor espiritual aos exércitos da 2ª Cruzada.
+              </p>
+              <a id="tag009" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('daniel-rops')">Daniel-Rops</a>
+              <a id="tag007" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('bernardo_de_claraval')">Bernardo de Claraval</a>
+              <a id="tag038" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('padres_cistercienses')">Padres Cistercienses</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv espiritualidade oracao bento_xvi">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0033.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">O Homem em Oração</p>
+            <p class="author">Bento XVI</p>
+            <p class="publisher"> Quadrante </p>
+            <p class="warning">Ainda não disponível</p><!--<p class="price"> ### </p>-->
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Este livro reúne as catequeses do Papa Bento XVI sobre a oração proferidas nas audiências de quarta-feira entre maio de 2011 e março de 2012. .</p>
+              <p>Longe de ser um tratado sistemático sobre a prática da oração, o livro parte de uma série de trechos da Sagrada Escritura para traçar as disposições que deve ter a alma de oração. Com a profundidade e a clareza que lhe são próprias, o papa analisa personagens e passagens do Antigo Testamento e dos Evangelhos – de Moisés a Jesus Cristo na Paixão, modelo máximo de oração – para transmitir-nos uma mensagem fundamental: é na oração que aprendemos a ser homens e mulheres de verdade, a conhecer-nos a nós mesmos e a encontrar respostas a perguntas sobre o sentido e o valor dos nossos atos. .</p>
+              <p>A alma de oração trava com Deus um colóquio sem palavras, mas com o coração na mão e a vida desnudada. É na oração que Deus nos revela a sua vontade para nós e, ao fazê-lo, revela a verdade sobre nós mesmos. Mais ainda: Deus revela-nos a si mesmo – um Deus compassivo e misericordioso o Deus bom pastor, que nos leva a “verdes prados e águas refrescantes”, que nos fará “habitar em sua casa por longos dias”, pela eternidade sem fim.
+              </p>
+              <a id="tag037" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('oracao')">Oração</a>
+              <a id="tag004" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('bento_xvi')">Bento XVI</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv espiritualidade vida-monastica bernardo_bonowitz ">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0034.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Buscando Verdadeiramente a Deus</p>
+            <p class="author">D. Bernardo Bonowitz OCSO</p>
+            <p class="publisher"> Mensageiro de Santo Antônio </p>
+            <p class="price"> 35,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Um livro nascido da mais pura semente de espiritualidade monástica, espiritualidade essa que, por estar profundamente enraizada na vivência concreta do Evangelho e na sabedoria de tantas gerações de monges, está admiravelmente apta a responder aos anseios do homem contemporâneo. .</p>
+              <p>“São Bento coloca como única condição para a recepção de um candidato no mosteiro o fato de que ele ‘busque verdadeiramente a Deus’. Daí o nome deste opúsculo. ‘Buscando Verdadeiramente a Deus’, na esperança de que a escrita e a leitura destas páginas seja uma maneira de buscá-lo juntos” (da Introdução).  
+              </p>
+              <a id="tag006" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('bernardo_bonowitz')">Bernardo Bonowitz</a>
+              <a id="tag060" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('vida_monastica')">Vida Monástica</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv espiritualidade teologia bernardo_bonowitz">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/no_cover.gif"></div> <!--0052.jpg-->
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">As Virtudes Teologais e Cardeais da Vida do Cristão</p>
+            <p class="author">D. Bernardo Bonowitz OCSO</p>
+            <p class="publisher"> Mensageiro de Santo Antônio </p>
+            <p class="price"> 15,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>"As Virtudes Teologais e Cardeais da Vida do Cristão", por Dom Bernardo Bonowitz.</p> 
+              <a id="tag006" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('bernardo_bonowitz')">Bernardo Bonowitz</a> 
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv espiritualidade thomas_merton ">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0036.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Novas Sementes de Contemplação</p>
+            <p class="author">Thomas Merton</p>
+            <p class="publisher"> Vozes </p>
+            <p class="price"> 59,90 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Um dos mais importantes livros de espiritualidade de Merton, Novas Sementes de Contemplação está no rol dos clássicos espirituais sobre a vida contemplativa. Escrito a partir da antiga herança cisterciense e da própria experiência no claustro, Thomas Merton conduz o leitor com a maestria de quem já percorreu o caminho, alertando acerca das armadilhas do falso-eu e apontando o caminho da união de vontades para atingir "a mais alta expressão de vida intelectual e espiritual do homem".</p>
+              <a id="tag056" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('thomas_merton')">Thomas Merton</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv espiritualidade padres-do-deserto oracao joao_cassiano">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0037.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Da Oração</p>
+            <p class="author">João Cassiano</p>
+            <p class="publisher"> Vozes </p>
+            <p class="price"> 32,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>O presente livro contém as Colações IX e X de João Cassiano, que se podem ler como um tratado completo sobre a oração. O leitor tem nas mãos dois textos complementares, que constituem uma verdadeira arte de orar, escrita por um dos maiores mestres espirituais da Igreja. As Colações dos Padres são uma série de vinte e quatro colóquios, em que monges célebres do Egito transmitem ensinamentos espirituais ao jovem Cassiano e ao seu companheiro Germano.</p>
+              <a id="tag037" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('oracao')">Oração</a>
+              <a id="tag024" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('joao_cassiano')">João Cassiano</a>
+              <a id="tag040" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('padres_do_deserto')">Padres do Deserto</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv espiritualidade padres-do-deserto henri_nouwen">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0038.png"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Caminho do Coração: A espiritualidade dos padres e madres do deserto </p>
+            <p class="author">Henri Nouwen</p>
+            <p class="publisher">Vozes</p>
+            <p class="price"> 28,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>O livro tem como base os comentários espirituais e conselhos dos Padres e Madres do Deserto, cristão que buscavam uma nova forma de martírio. Solidão, silêncio e oração incessante configuram o conceito central da espiritualidade do deserto, que tem grande valor para nós que vivemos situações sempre novas e desafiadoras como cristãos.</p>
+              <a id="tag020" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('henri_nouwen')">Henri Nouwen</a>
+              <a id="tag040" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('padres_do_deserto')">Padres do Deserto</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv vida-monastica vidas-dos-santos thomas_merton">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0039.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">A Montanha dos Sete Patamares</p>
+            <p class="author">Thomas Merton</p>
+            <p class="publisher"> Petra </p>
+            <p class="warning">Ainda não disponível</p><!--<p class="price"> ### </p>-->
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Poucos livros religiosos foram tão influentes em nosso tempo quanto A montanha dos sete patamares. Não à toa, foi considerado as Confissões do século XX, em elogiosa referência àquela que talvez seja a obra de espiritualidade mais famosa do Ocidente, escrita por Santo Agostinho. E a comparação procede: nestas páginas redigidas com uma sinceridade ímpar, e que já tocaram a vida de milhões de pessoas em todo o mundo – entre elas artistas, escritores, intelectuais e religiosos das mais diversas culturas –, encontramos o extraordinário testamento espiritual de um jovem que, após mergulhar nas ambições que o mundo lhe propunha, descobre que nada do que fosse mundano seria capaz de saciar seu coração. Com esta obra de beleza incomparável, podemos compreender como nasceu o "fenômeno Thomas Merton" em todo o mundo, bem como o motivo pelo qual, setenta anos depois de seu lançamento, A montanha dos sete patamares ainda comove tantas almas.</p>
+              <a id="tag056" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('thomas_merton')">Thomas Merton</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv vida-monastica agustin_roberts votos_monasticos">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0040.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Vida Monástica – Elementos básicos</p>
+            <p class="author">D. Agustín Roberts, OCSO</p>
+            <p class="publisher"> Lumen Christi </p>
+            <p class="price"> 55,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Esta obra é uma introdução profunda à vida e à espiritualidade dos monges que seguem a Regra de São Bento. Descreve as principais características de sua história, a partir da vida de Cristo; expõe seus ideais, analisa os votos que pronunciam, e orienta o jovem monge na vida concreta do mosteiro. </p>
+              <p>Pode ajudar também àquelas pessoas que, fora dos mosteiros, queiram aprender mais sobre a dinâmica do crescimento humano à luz do Evangelho e de seus elementos mais contemplativos e ascéticos.</p>
+              <p>Por trás do interesse nesta espiritualidade, há algo que se pode chamar o “monge” dentro de cada pessoa. Trata-se da imagem de Deus impressa no ser humano por seu Criador. Fomos feitos por Deus e para Deus. A vida monástica responde a esta orientação radical de todo ser humano. Este guia para a esta forma de vida pode ajudar a todos os Cristãos a viver mais plenamente o Evangelho em meio às tensões sociais que todos experimentamos.
+              </p>
+              <a id="tag001" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('agustin_roberts')">Agustín Roberts</a>
+              <a id="tag060" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('vida_monastica')">Vida Monástica</a>
+              <a id="tag062" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('votos_monasticos')">Votos Monásticos</a>
+          </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv padres-do-deserto vida-monastica vidas-dos-santos padres-da-igreja gregorio_magno vida_de_sao_bento">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0041.png"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Vida e Milagres de São Bento</p>
+            <p class="author">São Gregório Magno</p>
+            <p class="publisher">Lumen Christi</p>
+            <p class="price"> 34,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p> “Houve um homem de vida venerável”, assim começa o Livro II dos Diálogos, do Papa São Gregório, que narra a vida de São Bento. O conjunto de fatos narrados neste livro nos alerta para que redescubramos uma dimensão da nossa existência que se perdeu e que salta aos olhos na vida de Bento: o trabalhar sobre si mesmo, a ascese, a vigilância. É nesse sentido que Bento de Núrsia continua transmitindo às gerações cristãs o seu modo de viver o Evangelho, a sua ‘conversatio’ de oração e trabalho, de ‘lectio divina’ e meditação. A imagem do Pai amoroso e cheio de piedade, de mestre severo e exigente, que emerge da Regra escrita por ele, deve necessariamente, ser completada por aquela onde ele aparece como o monge que vive consigo mesmo sob o olhar de Deus. O cristocentrismo de Bento, o seu apego à Palavra da Escritura e à tradição monástica aparecem como um ideal, um caminho a ser percorrido pelos que desejam ser seus discípulos.</p>
+              <a id="tag018" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('gregorio_magno')">Gregório Magno</a>
+              <a id="tag059" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('vida_de_sao_bento')">Vida de São Bento</a>
+              <a id="tag061" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('vidas_dos_santos')">Vidas dos Santos</a>
+              <a id="tag039" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('padres_da_igreja')">Padres da Igreja</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv vida-monastica regra_de_sao_bento ">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0042.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">A Regra de São Bento</p>
+            <p class="author">São Bento</p>
+            <p class="publisher">Lumen Christi</p>
+            <p class="warning">Ainda não disponível</p><!--<p class="price"> ### </p>-->
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>A Regra de São Bento é um dos textos mais veneráveis da tradição Cristã. Desde São Gregório Magno até os dias de hoje, inúmeros foram os papas e bispos, sábios e santos que nela encontraram inspiração e instrução. Nela se encontram as melhores essências do Evangelho e da tradição patrística e monástica e que foi a origem religiosa na Europa Ocidental. Na Idade Média foi a “carta magna” do monaquismo, a Regra por excelência, e constituiu o grande instrumento de santificação para uma multidão inumerável de almas até os nossos dias. Vale lembrar que o desejo de “retornar à Regra de São Bento em toda a sua pureza e simplicidade” foi o grande fio condutor da reforma Cisterciense.</p>
+              <a id="tag045" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('regra_de_sao_bento')">Regra de São Bento</a>
+              <a id="tag060" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('vida_monastica')">Vida Monástica</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv teologia espiritualidade padres-cistercienses vida-monastica bernardo_de_claraval">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0043.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Os Graus da Humildade e da Soberba</p>
+            <p class="author">São Bernardo</p>
+            <p class="publisher"> Concreta </p>
+            <p class="warning">Ainda não disponível</p><!--<p class="price"> ### </p>-->
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>A obra de São Bernardo é uma exortação intemporal à excelência. Um chamado à vigilância constante, sem a qual não apenas os indivíduos, mas também as sociedades humanas acabam por ser vitimadas pelas más inclinações às quais a teologia católica chamou “pecado original”. Ao trazer à luz esta obra-prima da oratória e da espiritualidade, a Editora Concreta contribui sobremaneira para a recivilização do Brasil, que hoje luta para sair do atoleiro espiritual, moral, estético e político no qual se afundou. Este livro foi concretizado graças a uma campanha de financiamento coletivo.</p>
+              <a id="tag007" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('bernardo_de_claraval')">Bernardo de Claraval</a>
+              <a id="tag038" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('padres_cistercienses')">Padres Cistercienses</a>
+              <a id="tag060" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('vida_monastica')">Vida Monástica</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv espiritualidade luiz_gonzaga_de_carvalho">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0044.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">O Pai Nosso</p>
+            <p class="author">Luiz Gonzaga de Carvalho</p>
+            <p class="publisher"> Concreta </p>
+            <p class="warning">Ainda não disponível</p><!--<p class="price"> ### </p>-->
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Neste livro o professor Luiz Gonzaga de Carvalho, fundador do ICLS (Instituto Lux et Sapientiae), nos expõe magistralmente essa senda que inicia com o homem chamando a Deus de Pai e termina com Deus chamando ao homem de filho. É o primeiro livro do autor, que vem dando aulas sobre cristianismo, religiões comparadas, simbolismo e cosmologia há mais de 15 anos.</p>
+              <a id="tag030" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('luiz_gonzaga_de_carvalho')">Luiz Gonzaga de Carvalho</a>
+
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv padres-cistercienses vida-monastica vidas-dos-santos m_raymond santos_fundadores_de_cister">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0045.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Três Monges Rebeldes</p>
+            <p class="author">Pe. M. Raymond, OCSO</p>
+            <p class="publisher"> Minha Biblioteca Católica </p>
+            <p class="warning">Ainda não disponível</p><!--<p class="price"> ### </p>-->
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Esta obra narra, em prosa, a história da fundação do mosteiro de Cister, que se tornará a casa-mãe de toda a Ordem Cisterciense. Oriundos da grande abadia de Molesmes, os “santos fundadores de Cister”, como os chamamos, não pensavam em fundar uma “ordem”, mas simplesmente em viver a Regra de São Bento em toda a sua radicalidade e pureza. Mas o carisma nascente floresceu de modo tão pujante que Cister se tornou uma das Ordens monásticas mais vigorosas da história da Igreja.</p> 
+              <p>A presente narrativa da história dos santos Roberto, Alberico e Estevão – os santos fundadores de Cister – pelo Pe. Maria Raymond (da abadia trapista de Gethsemani), se constrói sobre o antigo gênero literário da saga, mas sem perder de vista a vida real dos personagens. O resultado é um texto poético e profundamente cativante, e de alto valor literário e espiritual. 
+              </p>
+              <a id="tag042" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('m_raymond')">Pe. M. Raymond</a>
+              <a id="tag061" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('vidas_dos_santos')">Vidas dos Santos</a>
+              <a id="tag053" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('santos_fundadores_de_cister')">Santos Fundadores de Cister</a>
+              <a id="tag038" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('padres_cistercienses')">Padres Cistercienses</a>
+              <a id="tag060" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('vida_monastica')">Vida Monástica</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv espiritualidade padres-do-deserto vida-monastica joao_cassiano">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0046.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Conferências de João Cassiano - Vol I</p>
+            <p class="author">João Cassiano</p>
+            <p class="publisher"> Subiaco </p>
+            <p class="price"> 47,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p><strong>Vol. 1: Conferências 1 a 7</strong></p>
+              <p>As obras de Cassiano contribuíram grandemente para a propagação do monaquismo Cristão no Ocidente. Os grandes fundadores, São Bento, São Domingos, São Bernardo, Santa Teresa de Ávila inspiraram-se em seus escritos e recomendaram sua leitura.</p> 
+              <p>O ensinamento recebido dos Pais do Deserto, a doutrina espiritual dos ascetas alexandrinos , os escritos de São João Crisóstomo, São Basílio e São Jerônimo foram repensados e sistematizados por Cassiano, e enriquecidos com sua própria reflexão e experiência.</p>
+              <p>O êxito que obtiveram suas obras monásticas através dos séculos se explica sem dúvida pela grande unidade e riqueza de sua doutrina bem como pelo entusiasmo e estilo com que as transmite.</p>
+              <a id="tag024" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('joao_cassiano')">João Cassiano</a>
+              <a id="tag040" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('padres_do_deserto')">Padres do Deserto</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv espiritualidade padres-do-deserto vida-monastica joao_cassiano">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0056.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Conferências de João Cassiano - Vol II</p>
+            <p class="author">João Cassiano</p>
+            <p class="publisher"> Subiaco </p>
+            <p class="price"> 30,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p><strong>Vol. 2: Conferências 8 a 15</strong></p>
+              <p>As obras de Cassiano contribuíram grandemente para a propagação do monaquismo Cristão no Ocidente. Os grandes fundadores, São Bento, São Domingos, São Bernardo, Santa Teresa de Ávila inspiraram-se em seus escritos e recomendaram sua leitura.</p> 
+              <p>O ensinamento recebido dos Pais do Deserto, a doutrina espiritual dos ascetas alexandrinos , os escritos de São João Crisóstomo, São Basílio e São Jerônimo foram repensados e sistematizados por Cassiano, e enriquecidos com sua própria reflexão e experiência.</p>
+              <p>O êxito que obtiveram suas obras monásticas através dos séculos se explica sem dúvida pela grande unidade e riqueza de sua doutrina bem como pelo entusiasmo e estilo com que as transmite.</p>
+              <a id="tag024" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('joao_cassiano')">João Cassiano</a>
+              <a id="tag040" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('padres_do_deserto')">Padres do Deserto</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv espiritualidade padres-do-deserto vida-monastica joao_cassiano">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0057.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Conferências de João Cassiano - Vol III</p>
+            <p class="author">João Cassiano</p>
+            <p class="publisher"> Subiaco </p>
+            <p class="price"> 48,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p><strong>Vol. 3: Conferências 16 a 24</strong></p>
+              <p>As obras de Cassiano contribuíram grandemente para a propagação do monaquismo Cristão no Ocidente. Os grandes fundadores, São Bento, São Domingos, São Bernardo, Santa Teresa de Ávila inspiraram-se em seus escritos e recomendaram sua leitura.</p> 
+              <p>O ensinamento recebido dos Pais do Deserto, a doutrina espiritual dos ascetas alexandrinos , os escritos de São João Crisóstomo, São Basílio e São Jerônimo foram repensados e sistematizados por Cassiano, e enriquecidos com sua própria reflexão e experiência.</p>
+              <p>O êxito que obtiveram suas obras monásticas através dos séculos se explica sem dúvida pela grande unidade e riqueza de sua doutrina bem como pelo entusiasmo e estilo com que as transmite.</p>
+              <a id="tag024" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('joao_cassiano')">João Cassiano</a>
+              <a id="tag040" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('padres_do_deserto')">Padres do Deserto</a> 
+           </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv espiritualidade padres-do-deserto vida-monastica joao_cassiano">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0047.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Instituições Cenobíticas</p>
+            <p class="author">João Cassiano</p>
+            <p class="publisher"> Subiaco </p>
+            <p class="price"> 49,50 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Como afirmou Colombás, Cassiano não passou à história como fundador de mosteiros, nem como reformador, nem como modelo de monges - ninguém escreveu sua biografia - mas sim como autor da única obra sistemática praticamente completa sobre a teoria monástica que os séculos IV e VI nos deixaram. Com seu talento para escrever e com sua experiência do monaquismo oriental, tendo convivido com grandes homens como Evágrio, João Crisóstomo e os Padres do Deserto, Cassiano foi o monge-escritor talhado para empreender uma obra de fundamental importância para os monges ocidentais, ou seja, dar-lhes a conhecer por uma exposição sistemática, clara e precisa o que os monges orientais entendiam por vida monástica, os seus fins e sua doutrina espiritual. </p>
+              <p>Constando de doze livros, as Instituições Cenobíticas e os remédios contra os oito vícios principais - esse é o nome completo da obra - apresenta duas partes ou volumes. </p>
+              <p>A <strong>Parte I</strong> tem como temática o "homem exterior".</br>
+              A <strong>Parte II</strong> aborda, uma a um, os oito vícios principais ou capitais e seus remédios, nos oferecendo uma exposição ascética das características e terpêutica dos mesmos, isto é, como se deve lutar cotidianamente contra as paixões a fim de purificar o coração e abri-lo inteiramente à caridade (puritas cordis).</p>
+              <a id="tag024" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('joao_cassiano')">João Cassiano</a>
+              <a id="tag040" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('padres_do_deserto')">Padres do Deserto</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv padres-da-igreja teologia olivier_clement ">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0048.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Fontes – Os místicos cristãos dos primeiros séculos</p>
+            <p class="author">Olivier Clément </p>
+            <p class="publisher"> Subiaco </p>
+            <p class="price"> 52,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Que é o cristianismo? Para responder, parece ser necessário voltar às fontes, expor, inicialmente, mas não unicamente, por textos e testemunhos, a primeira experiência cristã: mística, se quiserem, mas no sentido da existência inteiramente transfigurada por um imenso dinamismo de ressurreição. Textos "dos Padres": aqueles que geram.</p>
+              <p>Olivier Clément escolheu-os, belos e diretos. Comentou-os longamente, num verdadeiro ensaio sobre o significado espiritual do cristianismo no centro de nossa modernidade. Encontram-se, pois, neste livro: elementos de um "conhecimento", no sentido da "verdadeira gnose" da qual falava Irineu de Lião, com as grandes antinomias do abismo e da cruz, da unidade ontológica de todos os homens e de sua diferença não menos absoluta à imagem da Unitrindade. Os elementos principalmente de uma ascese vivificante, capaz de metamorfosear as paixões e de detectar ativamente a beleza de Deus através dos seres e das coisas. Uma ética paradoxal, enfim, ética do amor criador a serviço do homem irredutível. </p>
+              <p><strong>Primeira parte:</strong> Para uma inteligência do Mistério</br>
+              <strong>Segunda parte:</strong> A iniciação e o combate</br>
+              <strong>Terceira parte:</strong> Enfoques da contemplação</p>
+              <p>Reunindo um conjunto de textos brilhantemente escolhidos dos primeiros séculos da Igreja do Oriente e do Ocidente, o Autor traz à luz a espiritualidade profundamente mística que floresceu no Cristianismo desde suas origens. </p>
+              <p>Olivier Clément (1921–2009) é um dos mais eminentes teólogos Ortodoxos contemporâneos. Foi professor no Instituto São Sérgio de Paris e membro Instituto Ecumênico, fundado pelo L’Institut Catholique. Dedicou-se ativamente à restauração da comunhão entre a Igreja Católica e as Igrejas Ortodoxas, fundamentando-se no que ele chamou “ecumenismo no tempo”: o reavivamento da experiência propriamente original da Tradição comum da Igreja indivisa do primeiro Milênio.</p>
+              <a id="tag036" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('olivier_clement')">Olivier Clément</a>
+              <a id="tag039" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('padres_da_igreja')">Padres da Igreja</a>
+              <a id="tag055" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('teologia')">Teologia</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv espiritualidade padres-do-deserto lucien_regnault apoftegmas">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0049.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">À Escuta dos Pais do Deserto Hoje</p>
+            <p class="author">D. Lucien Regnault, OSB</p>
+            <p class="publisher"> Subiaco </p>
+            <p class="price"> 29,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Santo Antão e os primeiros eremitas egípcios, chamados Pais do Deserto, dirigiram a seus discípulos palavras de sabedoria, das quais muitas foram conservadas. Estas palavras exerceram durante séculos uma influência considerável na história da espiritualidade e numerosas publicações atestam que suscitam, ainda em nossos dias, um real interesse para os cristãos de hoje que não vivem no deserto nem nos mosteiros. </p>
+              <p>Há alguns anos uma emissora cristão do sul da França quis apresentar a seus ouvintes, todas as manhãs, durante seis meses, uma palavra dos Pais acompanhada de uma breve explicação, acentuando seu valor e alcance atuais. Agrupamos aqui estas palavras juntamente com os comentários para a rádio. </p>
+              <p>Os Pais do Deserto que, melhor do que ninguém, puseram em prática os elementos essenciais do ideal evangélico, são particularmente aptos a falar-nos dele. Não pretendem ensinar-nos, mas o que dizem merece ao menos ser ouvido. </p>
+              <p>"A mensagem dos Pais do Deserto ressoa ainda hoje, mais do que nunca, como um convite a redescobrir no alarido da civilização moderna, espaços de solidão, onde possamos nos empenhar resolutamente na procura da verdade sem máscaras, nem álibis, nem ficções (S. João Paulo II)." </p>
+              <p>Lucien Regnault (1924-2003) foi monge da Abadia de Saint-Pierre de Solesmes e especialista nos Pais do Deserto.</p>
+              <a id="tag029" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('lucien_regnault')">Lucien Regnault</a>
+              <a id="tag040" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('padres_do_deserto')">Padres do Deserto</a>
+              <a id="tag002" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('apoftegmas')">Apoftegmas</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv espiritualidade padres-do-deserto apoftegmas ">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0050.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">De volta ao Paraíso: A vida dos Padres do Deserto e os seus Apoftegmas</p>
+            <p class="author">Padres do Deserto</p>
+            <p class="publisher"> Subiaco </p>
+            <p class="price"> 90,00 <span class="warning">Não disponível</span></p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Um clássico da literatura monástica, conta a vida e os ditos dos padres eremitas do deserto egípcio. </p>
+              <p>Este volume traz uma introdução de Dom Justino de A. Bueno mostrando a espicificidade do movimento monástico cristão como resposta ao chamado à perfeição evangélica, tendo como protótipo Santo Antão, o pai dos monges. </p>
+              <p>Os apoftegmas chegaram até nós sob formas muito diversificadas. Podemos estabelecer cinco tipos principais: o apoftegma clássico, a aexortação coletiva, os pequenos relatos edificantes, os relatos autônomos e os extratos literários. "Esses apoftegmas, pungentes e impressionantes, eram guardados na memória de quem os testemunhava e repetidos a outros monges (...) Difundidos oralmente no início, foram em breve colecionados por escrito pelos discípulos dos monges; várias coleções de apoftegmas foram assim compiladas". (D Estêvão Bettencort, tradutor dos apoftegmas). </p>
+              <p>Pela variedade das experiências que descrevem, contribuem a iniciar o leitor na prática daquele dom que não é necessário somente ao deserto, o discernimento espiritual.</p>
+              <a id="tag040" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('padres_do_deserto')">Padres do Deserto</a>
+              <a id="tag002" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('apoftegmas')">Apoftegmas</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv espiritualidade- padres-do-deserto vida-monastica vidas-dos-santos sao_pacomio">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0051.jpg"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Vida de São Pacômio</p>
+            <p class="author">D. Armand Veilleux, OCSO </br>(tradução, introdução e notas)</p>
+            <p class="publisher"> Subiaco </p>
+            <p class="price"> 48,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>Algumas das páginas fundamentais da História do cristianismo: A vida do fundador das primeiras comunidades religiosas cristãs, o Pai da Koinonia.<p>
+                <p><strong>Sumário:</strong></br>
+                Mapa dos mosteiros pacomianos</br>
+                Vida de São Pacômio segundo a Tradição Copta</br>
+                Parte 1 - São Pacômio e a criação da koinonia</br>
+                Parte 2 - O espírito de Pacômio vive em seus filhos</br>
+                Anexos: Tabela sinótica, quadro cronológico, glossário, índices</p>
+                <a id="tag054" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('sao_pacomio')">São Pacômio</a>
+                <a id="tag040" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('padres_do_deserto')">Padres do Deserto</a>
+                <a id="tag060" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('vida_monastica')">Vida Monástica</a>
+                <a id="tag061" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('vidas_dos_santos')">Vidas dos Santos</a>                
+              </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv espiritualidade bernardo_bonowitz direcao_espiritual vida_monastica">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0052.png"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">Apto a Ganhar Almas – Direção espiritual no contexto monástico</p>
+            <p class="author">D. Bernardo Bonowitz OCSO</p>
+            <p class="publisher"> Subiaco </p>
+            <p class="price"> 27,00 </p>
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>"Apto a Ganhar Almas – Direção espiritual no contexto monástico", por Dom Bernardo Bonowitz</p>
+              <a id="tag006" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('bernardo_bonowitz')">Bernardo Bonowitz</a>
+              <a id="tag012" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('direcao_espiritual')">Direção Espiritual</a>
+              <a id="tag060" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('vida_monastica')">Vida Monástica</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      
+      <div class="filterDiv vida-monastica paul_delatte ">
+        <div class="accordion-box">
+          <div id="bk-grid-1"><img src="/images/book_covers/0053.png"></div>
+          <div id="bk-grid-2"></div>
+          <div id="bk-grid-3">
+            <p class="name">A Vida Monástica na Escola de São Bento</p>
+            <p class="author">D. Paul Delatte, OSB</p>
+            <p class="publisher"> Subiaco </p>
+            <p class="warning">Ainda não disponível</p><!--<p class="price"> ### </p>-->
+          </div>
+          <div id="bk-grid-4"><button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>“A vida beneditina é essencialmente a vida cristã”. Com essas palavras inicia-se este opúsculo oriundo do legado espiritual de D. Paul Delatte, terceiro abade de Solesmes, que exerceu seu abaciado em uma época de grandes distúrbios na vida religiosa da França causados pelo violento espírito anticlerical do período revolucionário francês. Na linha de seus predecessores, trabalhou incansavelmente na obra da restauração da vida monástica na França. Sua inteligência luminosa, sua bondade profunda unida a uma notável sensibilidade e sua fé inabalável marcaram profunda e duravelmente seus filhos espirituais. </p>
+              <p>“A vida monástica na Escola de São Bento” é um exemplo de que o legado espiritual deixado em suas obras permanece uma fonte de tradição monástica para os filhos e filhas de São Bento assim como para todos os que procuram um itinerário para uma vida de união com Deus.</p>
+              <a id="tag041" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('paul_delatte')">Paul Delatte</a>
+              <a id="tag060" class="tag-btn" href="#back-to-top" onclick="tagFunction(this.id);filterSelection('vida_monastica')">Vida Monástica</a>
+            </div>
+          </div>
+          <div class="end-line hr" id="bk-grid-4"></div>
+        </div>
+      </div>
+      <!--End Book Row-->
+    </div>
+  </main>
+
+      <!-- IE Footer-->
+      <div id="ie-footer">
+        <div id="main">
+        <h2 id="footer-h">Abadia Trapista Nossa Senhora do Novo Mundo</h2>
+        <div id="footer-grid-1">
+          <strong>NAVEGAÇÃO</strong>
+          <p><a href="#" class="clean-link"><i class="material-icons">link</i>Início</a></p>
+          <p><a href="#" class="li--active clean-link"><i class="material-icons">link</i>Catálogo</a></p>
+          <p><a href="http://mosteirotrapista.org.br/index.php" class="clean-link" target="_blank"><i class="material-icons">link</i>Site do Mosteiro</a></p>
+          <p><a href="https://caminhocisterciense.com/" class="clean-link" target="_blank"><i class="material-icons">link</i>Blog</a></p>
+          <p><a href="#" class="clean-link" ><i class="material-icons">link</i>Sobre</a></p>
+        </div>
+        <div id="footer-grid-2">
+          <strong>CONTATO</strong>
+          <p><a href="tel:+55-41-3628-1264" alt="(41)3628-1264" class="clean-link" target="_blank"><i class="material-icons">phone</i>+55 (41) 3628-1264</a></li>
+          <p><a href="mailto:novomundo@mosteirotrapista.org.br" class="clean-link" alt='novomundo@mosteirotrapista.org.br' target="_blank"><i class="material-icons">alternate_email</i>Comunidade</a></p>
+          <p><a href="mailto:hospedaria@mosteirotrapista.org.br" class="clean-link" alt='hospedaria@mosteirotrapista.org.br' target="_blank"><i class="material-icons">alternate_email</i>Hospedaria</a></p>
+          <p><a href="mailto:vocacional@mosteirotrapista.org.br"  class="clean-link" alt='vocacional@mosteirotrapista.org.br' target="_blank"><i class="material-icons">alternate_email</i>Vocações</a></p>
+          <p><i class="material-icons" style="top: 26px !important;">mail</i>Caixa Postal 11</br><span>Campo do Tenente (PR)</br><span>CEP 83870-000</span></span></p>
+        </div>
+        <div id="footer-grid-3">
+          <strong>ENDEREÇO</strong>
+          <p><i class="material-icons">email</i>Caixa Postal 11</p>
+          <p><a href="https://goo.gl/maps/EUDC2cfLLrzM8v3DA" class="clean-link" alt="Mostrar no Google Maps" target="_blank"><i class="material-icons"  style="top: 16px  !important;">location_on</i>Estrada PR 427 km 7</br><span>Campo do Tenente</span></br><span>Paraná - Brasil</span></a></p>
+        </div>
+        <div id="post-footer"><i>"Obsculta, o fili, praecepta magistri, et inclina aurem cordis tui"</br>Pater Benedicti</i></div>
+      </div>  
+      </div>
+      <!--End IE Footer-->
+
+  <footer>
+    <h2 id="footer-h">Abadia Trapista Nossa Senhora do Novo Mundo</h2>
+    <div id="footer-grid-1">
+      <strong>NAVEGAÇÃO</strong>
+      <p><a href="#" class="clean-link"><i class="material-icons">link</i>Início</a></p>
+      <p><a href="#" class="li--active clean-link"><i class="material-icons">link</i>Catálogo</a></p>
+      <p><a href="http://mosteirotrapista.org.br/index.php" class="clean-link" target="_blank"><i class="material-icons">link</i>Site do Mosteiro</a></p>
+      <p><a href="https://caminhocisterciense.com/" class="clean-link" target="_blank"><i class="material-icons">link</i>Blog</a></p>
+      <p><a href="#" class="clean-link" ><i class="material-icons">link</i>Sobre</a></p>
+    </div>
+    <div id="footer-grid-2">
+      <strong>CONTATO</strong>
+      <p><a href="tel:+55-41-3628-1264" alt="(41)3628-1264" class="clean-link" target="_blank"><i class="material-icons">phone</i>+55 (41) 3628-1264</a></li>
+      <p><a href="mailto:novomundo@mosteirotrapista.org.br" class="clean-link" alt='novomundo@mosteirotrapista.org.br' target="_blank"><i class="material-icons">alternate_email</i>Comunidade</a></p>
+      <p><a href="mailto:hospedaria@mosteirotrapista.org.br" class="clean-link" alt='hospedaria@mosteirotrapista.org.br' target="_blank"><i class="material-icons">alternate_email</i>Hospedaria</a></p>
+      <p><a href="mailto:vocacional@mosteirotrapista.org.br"  class="clean-link" alt='vocacional@mosteirotrapista.org.br' target="_blank"><i class="material-icons">alternate_email</i>Vocações</a></p>
+      <p><i class="material-icons" style="top: 26px;">mail</i>Caixa Postal 11</br><span>Campo do Tenente (PR)</br><span>CEP 83870-000</span></span></p>
+    </div>
+    <div id="footer-grid-3">
+      <strong>ENDEREÇO</strong>
+      <p><i class="material-icons">email</i>Caixa Postal 11</p>
+      <p><a href="https://goo.gl/maps/EUDC2cfLLrzM8v3DA" class="clean-link" alt="Mostrar no Google Maps" target="_blank"><i class="material-icons"  style="top: 16px;">location_on</i>Estrada PR 427 km 7</br><span>Campo do Tenente</span></br><span>Paraná - Brasil</span></a></p>
+    </div>
+    <div id="post-footer"><i>"Obsculta, o fili, praecepta magistri, et inclina aurem cordis tui"</br>Pater Benedicti</i></div>
+  </footer>
+  <script src="/js/script.js"></script>
+</body>
+</html>

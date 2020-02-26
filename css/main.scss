@@ -1,0 +1,1095 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+$padding: 0 15px 0 15px;
+$padding-vert: 12px 0 12px 0;
+$padding-tablet: 0 100px 0 100px;
+$padding-desktop: 0 15% 0 15%;
+
+$margin: 15px;
+$colors: (
+dark:#090909,
+first:#10759C,
+second: #EBEBEB,
+third:#eeeeee,
+forth:#8E8E93,
+none: #ffffff00,
+bg:#f7f7f7,
+font-dark:#000,
+font-light:#fff,
+);
+
+$desktop: 1200px;
+$tablet: 680px;
+
+@function color($color-name) {
+  @return map-get($colors, $color-name)
+};
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;    
+  }
+}
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;    
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#return-to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background: color(forth);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  display: none;
+  z-index: 3;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.247);
+  i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    background: rgba(0, 0, 0, 0.9);
+  }
+  &:hover i {
+    color: #fff;
+    top: 5px;
+  }
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  background-color: color(third);
+  margin: 0;
+  text-decoration: none;
+  user-select: none;
+}
+
+.blur {
+  filter: blur(3px)
+}
+
+a,h1, h2, h3, h4, .btn {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.dropdown{
+  /* Dropdown */
+  position: absolute;
+  z-index: 1;
+  background-color: color(dark);
+  transition-duration: 0.3s;
+  overflow: hidden;
+  background-color: rgba(10, 10, 10, 0.8);
+  width: 100%;
+  display: inline-block;
+  @include tablet {
+    display: none !important;
+  }
+  a {
+    font-size: 20px;
+    padding: 15px 15px;
+  }
+  .dropbtn {
+    color: color(font-light);
+    transition-duration: 0.3s;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 30px;
+    transition-duration: 0.3s;
+  }
+  .dropdown-content {
+    display: none;
+    position: relative;
+    transition-duration: 0.3s;
+  }
+  .dropdown-content a {
+    color: color(font-light);
+    padding: $padding-vert;
+    padding-left: 36px;
+    text-decoration: none;
+    display: block;
+    transition-duration: 0.3s;
+  }
+  .dd--active{
+    color: color(first) !important;
+  }    
+  .show {
+    display:block;
+    transition-duration: 0.3s;
+  }
+  ul {
+    display: none;
+    transition-duration: 0.3s;
+  }
+}
+
+/**Navbar**/
+.navbar {
+  display: none;
+  @include tablet {
+    display: block !important;
+  }
+  
+  ul {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(10, 10, 10, 0.8);
+    display: flex !important;
+    justify-content: center;
+    z-index: 3;
+    width: 100%;
+    li{
+      float: left;
+      i {
+        padding-top: 3px ;
+        text-shadow: 0 0 3px #000 ;
+      }
+      a {
+        display: block;
+        color: color(font-light) !important;
+        text-align: center;
+        font-weight: 500;
+        font-size: 20px;
+        transition-duration: 0.3s;
+        padding: 10px 15px !important;
+        @include desktop {
+        padding: 15px 20px !important;
+        font-size: 24px;
+        }
+        text-decoration: none;
+        text-shadow: 0 0 3px rgba(0, 0, 0, 0.5) ;
+      }
+      a.li--active {
+        color: color(first) !important;
+      }
+      
+      a:hover:not(.li--active) {
+        color: color(first) !important;
+      }
+    }
+  }
+}
+
+#header {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.247);
+  background-image: url('/images/header/index-header-image.jpg'); 
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  height: max-content;
+  z-index: -1 !important;
+  @include desktop {
+    height: 100vh !important;
+    background-attachment: fixed !important;
+  }
+}
+.bg-text {
+  color: color(font-light);
+  padding: 60px 15px;
+  bottom: auto;
+  top: auto;
+    h1 {
+    text-align: center;
+    margin-bottom: 15px !important;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold !important;
+    font-size: 3em;
+    text-shadow: 3px 5px 7px rgba(0, 0, 0, 0.7);
+    color: color(third);
+    }
+      div {
+      width: 30%;
+      margin-left: 35% !important;
+      border-bottom: 2px solid color(forth);
+      box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.7);
+    }
+    h2 {
+      text-align: center;
+      font-weight: regular;
+      text-shadow: 3px 5px 7px rgba(0, 0, 0, 0.7);
+      color: color(third);
+      margin-top: 15px !important;
+        margin-bottom: 10vh !important;
+      @include desktop {
+        margin-bottom: 15vh !important;
+      }
+    }
+  @include desktop {
+    h1{
+      margin: 17vh 0 15px 0 !important;
+      font-size: 90px !important;
+    }
+    h2 {
+      font-size: 40px !important;
+      margin: 15px 0 0 0  !important;
+    }
+  }
+}
+
+#card {
+  margin-top: -10vh !important;
+  z-index: 5 !important;
+@include desktop {
+  margin-top: -15vh !important;
+}
+}
+
+
+
+
+main{
+  background-color: color(bg);
+  margin-top: 0;
+  margin: $padding;
+  padding: 20px ;
+  border-radius: 5px;
+  margin-bottom: 2em !important;
+  display: grid;
+  grid-template-areas: 
+  "heading"
+  "categories"
+  "buy-button"
+  "books" ;
+  
+  p {
+    font-size: 20px;
+  }
+  @include tablet {
+    padding: 25px;
+    margin: $padding-tablet;
+    padding-top: 40px;
+  }
+  @include desktop {
+    margin: $padding-desktop;
+    padding-top: 40px;
+    grid-template-columns: 250px auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "heading        heading"
+    "categories  buy-button"
+    "categories       books" ;
+  }
+  section { 
+    margin-bottom: 5em;
+    h2 {
+      margin: 0;
+    }
+    @include desktop {
+      grid-area: heading;
+      margin-bottom: 30px;
+    } 
+    
+    div {
+      text-align: right;
+
+      padding: 20px;
+      font-size: 20px;
+      border-right: 4px solid color(forth);
+    }
+  }  
+  #btnContainer {
+    margin-bottom: 3em;
+    h3 {
+      font-size: 22px;
+      font-family: 'Montserrat', sans-serif;
+      margin-top: 0px !important;
+    }
+    @include desktop {
+      grid-area: categories;
+      margin-right: 20%;
+    }
+  }
+  .buy-button {
+    position: relative;
+    width: 100%;
+    margin-bottom: 3em;
+    @include tablet {
+      margin-bottom: 0;
+    }
+    a {
+      text-decoration: none;
+      padding: 1px 10px 2px 5px;
+      font-size: 16px;
+      border-radius: 25px;
+      color: color(first);
+      border: 2px solid color(first);
+      font-weight: bold;
+      background-color: color(none);
+      float: right;
+      cursor: pointer;
+      margin-top: 5px;
+      transition-duration: 0.3s;
+      &:hover, &:focus {
+        color: color(forth) !important;
+        border: 2px solid color(forth) !important;
+        }
+      i {
+        position: relative;
+        top: 1px;
+        left: 0px;
+        padding: 0px 5px 0px 5px;
+        font-size: 15px;
+      }
+    }
+    grid-area: buy-button;
+  }  
+  .filterDiv {
+    margin: 5px;
+    display: none;
+    a:link, a:visited {
+      text-decoration: none;
+      color: color(first);
+      &:hover {
+        text-shadow: 0px 3px 5px #0a0a0a44;;
+      }
+    }
+  }
+  .show {
+    display: block;
+  }
+  .container {
+    margin-top: 20px;
+    overflow: hidden;
+    @include desktop {
+      grid-area: books;
+    }
+    
+  }
+  .btn {
+    border-radius: 20px;
+    display: inline-block;
+    padding: 2px 10px 3px 10px;
+    width: fit-content;
+    margin: 0 5px 10px 0 ;
+    background-color: color(second);
+    position: relative;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .btn.active {
+    background-color:color(first);
+    color: color(font-light);
+  }
+}
+
+@include desktop {
+  .selectors {
+    border-right: 4px solid color(third);
+    .btn {
+      background-color: color(none) !important;
+      border-radius: 0;
+      font-size: 20px;
+      font-weight: lighter;
+      text-align: left;
+      display: block;
+      padding-left: 0;
+      margin-top: 12px;
+      transition-duration: 0.3s;
+    }
+    .btn.active {
+      color: color(font-dark) !important;
+      margin-left: 5px;
+      border-left: 4px solid color(first);
+      border-radius: 0;
+      padding-left: 5px;
+      
+    }
+    .btn:hover,
+    .btn:focus {
+      color: color(first);
+      margin-left: 5px;
+    }
+    .btn.active:hover{
+      color: color(forth) !important;
+      border-left: 4px solid color(forth);
+    }
+  }
+}
+
+@supports (-ms-ime-align: auto) {
+  /* Microsoft EdgeV13&14 CSS styles go here */
+  main {
+    @include desktop {
+      margin: 0 23% 0 23% !important;
+      padding-top: 40px !important;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas: 
+      "heading"
+      "buy-button"
+      "categories"
+      "books" ;
+      .selectors {
+        border-right: none !important ;
+        .btn {
+          text-align: center !important;
+          transition-duration: 0.3s;
+          border-radius: 20px !important;
+          display: inline-block !important;
+          padding: 2px 10px 3px 10px !important;
+          width: fit-content !important;
+          margin: 0 5px 10px 0 !important;
+          background-color: color(second) !important;
+          position: relative !important;
+          font-size: 20px !important;
+          cursor: pointer;
+          font-weight: normal !important;
+        }
+        .btn.active {
+          color: color(font-light) !important;
+          background-color: color(first) !important;          
+        }
+        .btn:hover,
+        .btn:focus {
+          color: color(first);
+          margin-left: 5px;
+        }
+        .btn.active:hover{
+          color: color(forth) !important;
+        }
+      }
+    }
+  }
+    footer {
+      display: none !important;
+    }
+    #ie-footer {
+      #main {
+        @include tablet {
+          margin: $padding-tablet;
+        }
+        @include desktop {
+          margin: 0 23% 0 23% !important;
+        }  
+      }
+      width: 100%;
+      margin: 0 !important;
+      display: unset !important;
+      background-color: color(dark);
+      padding: $padding;
+      padding-top: 15px !important;
+      padding-bottom: 15px !important;
+      color: color(font-light);
+      .clean-link {
+        text-decoration: none;
+        color: unset;
+      }
+      #footer-h {
+        margin: 1em 0 0 0;
+        font-weight: normal;
+      }
+      #footer-grid-1, #footer-grid-2, #footer-grid-3 {
+        margin: 2em 1em 0 0;
+      }
+      #post-footer {
+        color: #ffffff2f !important;
+        margin: 2em 0 1em 0;
+        font-size: 20px;
+        text-align: center;
+  
+      }
+      strong {
+        font-weight: bolder;
+        color: color(forth);
+        font-size: 20px;
+      }
+      p {
+        margin: 10px 0;
+        font-size: 18px;
+        span {
+          padding-left: 39px;
+        }
+      }
+      i {
+        top: 5px;
+        margin-right: $margin;
+      }
+  
+      a:hover,a:hover {
+        color: color(first) !important;
+      }
+        font-size: 22px;
+    }
+}
+
+@supports (-ms-accelerator: true) {
+   /* Microsoft EdgeV13 CSS styles go here */
+   main {
+    @include desktop {
+      margin: 0 23% 0 23% !important;
+      padding-top: 40px !important;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas: 
+      "heading"
+      "buy-button"
+      "categories"
+      "books" ;
+      .selectors {
+        border-right: none !important ;
+        .btn {
+          text-align: center !important;
+          transition-duration: 0.3s;
+          border-radius: 20px !important;
+          display: inline-block !important;
+          padding: 2px 10px 3px 10px !important;
+          width: fit-content !important;
+          margin: 0 5px 10px 0 !important;
+          background-color: color(second) !important;
+          position: relative !important;
+          font-size: 20px !important;
+          cursor: pointer;
+          font-weight: normal !important;
+        }
+        .btn.active {
+          color: color(font-light) !important;
+          background-color: color(first) !important;          
+        }
+        .btn:hover,
+        .btn:focus {
+          color: color(first);
+          margin-left: 5px;
+        }
+        .btn.active:hover{
+          color: color(forth) !important;
+        }
+      }
+    }
+  }
+    footer {
+      display: none !important;
+    }
+    #ie-footer {
+      #main {
+        @include tablet {
+          margin: $padding-tablet;
+        }
+        @include desktop {
+          margin: 0 23% 0 23% !important;
+        }  
+      }
+      width: 100%;
+      margin: 0 !important;
+      display: unset !important;
+      background-color: color(dark);
+      padding: $padding;
+      padding-top: 15px !important;
+      padding-bottom: 15px !important;
+      color: color(font-light);
+      .clean-link {
+        text-decoration: none;
+        color: unset;
+      }
+      #footer-h {
+        margin: 1em 0 0 0;
+        font-weight: normal;
+      }
+      #footer-grid-1, #footer-grid-2, #footer-grid-3 {
+        margin: 2em 1em 0 0;
+      }
+      #post-footer {
+        color: #ffffff2f !important;
+        margin: 2em 0 1em 0;
+        font-size: 20px;
+        text-align: center;
+  
+      }
+      strong {
+        font-weight: bolder;
+        color: color(forth);
+        font-size: 20px;
+      }
+      p {
+        margin: 10px 0;
+        font-size: 18px;
+        span {
+          padding-left: 39px;
+        }
+      }
+      i {
+        top: 5px;
+        margin-right: $margin;
+      }
+  
+      a:hover,a:hover {
+        color: color(first) !important;
+      }
+        font-size: 22px;
+    }
+}
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+   /* IE10 & IE11 CSS styles go here */
+   main {
+    @include desktop {
+      margin: 0 23% 0 23% !important;
+      padding-top: 40px !important;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas: 
+      "heading"
+      "buy-button"
+      "categories"
+      "books" ;
+      .selectors {
+        border-right: none !important ;
+        .btn {
+          text-align: center !important;
+          transition-duration: 0.3s;
+          border-radius: 20px !important;
+          display: inline-block !important;
+          padding: 2px 10px 3px 10px !important;
+          width: fit-content !important;
+          margin: 0 5px 10px 0 !important;
+          background-color: color(second) !important;
+          position: relative !important;
+          font-size: 20px !important;
+          cursor: pointer;
+          font-weight: normal !important;
+        }
+        .btn.active {
+          color: color(font-light) !important;
+          background-color: color(first) !important;          
+        }
+        .btn:hover,
+        .btn:focus {
+          color: color(first);
+          margin-left: 5px;
+        }
+        .btn.active:hover{
+          color: color(forth) !important;
+        }
+      }
+    }
+  }
+    footer {
+      display: none !important;
+    }
+    #ie-footer {
+      #main {
+        @include tablet {
+          margin: $padding-tablet;
+        }
+        @include desktop {
+          margin: 0 23% 0 23% !important;
+        }  
+      }
+      width: 100%;
+      margin: 0 !important;
+      display: unset !important;
+      background-color: color(dark);
+      padding: $padding;
+      padding-top: 15px !important;
+      padding-bottom: 15px !important;
+      color: color(font-light);
+      .clean-link {
+        text-decoration: none;
+        color: unset;
+      }
+      #footer-h {
+        margin: 1em 0 0 0;
+        font-weight: normal;
+      }
+      #footer-grid-1, #footer-grid-2, #footer-grid-3 {
+        margin: 2em 1em 0 0;
+      }
+      #post-footer {
+        color: #ffffff2f !important;
+        margin: 2em 0 1em 0;
+        font-size: 20px;
+        text-align: center;
+  
+      }
+      strong {
+        font-weight: bolder;
+        color: color(forth);
+        font-size: 20px;
+      }
+      p {
+        margin: 10px 0;
+        font-size: 18px;
+        span {
+          padding-left: 39px;
+        }
+      }
+      i {
+        top: 5px;
+        margin-right: $margin;
+      }
+  
+      a:hover,a:hover {
+        color: color(first) !important;
+      }
+        font-size: 22px;
+    }
+}
+
+
+
+/**Accordion**/
+
+.accordion-box {
+  background-color: color(none);
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  transition: 0.4s;
+  font-family: 'Montserrat', sans-serif;
+  font-size: unset;
+  justify-content: center;
+}
+.accordion {
+  margin-bottom: 5px;
+  transition-duration: 0.3s;
+  &:hover, &:focus {
+    color: color(first);
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+}
+#bk-grid-1 {
+  img {
+    width: 7em;
+    position: relative;
+    border-radius: 7px;
+    box-shadow: 3px 5px 5px #0000002e;
+    @include tablet {
+      width: 8em;
+    }
+    @include desktop {
+      width: 9em;
+    }
+  }
+}
+#bk-grid-3 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  .name {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px !important;
+  }
+  .author{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 3px;
+    &::before {
+      content:'por ';
+    }
+  }  
+  .publisher{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 3px;
+    &::before {
+      content:'Editora: ';
+    }
+  }
+  .price{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 3px;
+    &::before {
+      content:'R$ ';
+    }
+  }
+  .warning{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 3px;
+    &::before {
+      content:'[';
+    }
+    &::after {
+      content:']';
+    }
+  }
+      
+    
+    @include tablet {
+      .name {
+      margin-top: 0 !important;
+      /*margin-bottom: 0 !important;*/
+    }
+    margin: 0 !important;
+  }
+}
+  #bk-grid-4 {
+    @include desktop {
+      padding-top: 20px;
+    }
+    button {
+      background-color: color(none);
+      border: none;
+      cursor: pointer;
+      outline: 0;
+    }
+    button:focus {
+      i{
+        color: color(first);
+      }
+    }
+  }
+.tag-btn {
+      text-decoration: none;
+      padding: 2px 10px 2px 10px;
+      font-size: 16px;
+      border-radius: 20px;
+      color: color(forth) !important;
+      border: 2px solid color(forth);
+      background-color: color(none);
+      float: right;
+      font-weight: bold;
+      cursor: pointer;
+      transition-duration: 1s;
+      margin: 1em 5px 1em 1em;
+      &:hover {
+        color: color(first) !important;
+        border: 2px solid color(first);
+        }
+  }
+
+#tags {
+  width: 100%;  
+  display: flex;
+  justify-content: center !important;
+}
+.auto-hide {
+  display: none;
+  justify-content: center !important;
+  min-width: 250px;
+  background-color: #333;
+  box-shadow: 3px 5px 6px #00000034;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  top: 30px;
+  font-size: 22px;
+  @include tablet {
+  }
+  &::before {
+    content:'Resultados para "';
+  }
+  &::after {
+    content:'"';
+  }
+  
+  animation: hide-p ease-in 7s forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hide-p {
+  0%   {opacity: 1;display: block;}
+  90%  {opacity: 1;display: block;}
+  100% {opacity: 0; display: none;}
+  to {
+  }
+}
+@-webkit-keyframes hide-p {
+  0%   {opacity: 1;display: block;}
+  90%  {opacity: 1;display: block;}
+  100% {opacity: 0; display: none;}
+  to {
+  }
+}
+
+  
+  @include tablet {
+    .accordion-box{
+      display: grid;
+      grid-template-columns: 8em auto;
+      grid-template-rows: 1fr auto auto auto;
+    }
+    #bk-grid-1 {
+      grid-row: 1 / 3;
+    }
+    #bk-grid-3 {
+      text-align: left;
+      padding-left: 30px;
+      bottom: 0 !important;
+      
+    }
+    #bk-grid-4 {
+      grid-column: 1 / 3;
+    }
+  }
+  @include desktop {
+    .accordion-box{
+      grid-template-columns: 9em auto;
+    }
+    #bk-grid-3 {
+      font-size: 20px;
+      
+    }  
+  }
+  
+  .arrow:after {
+    content: 'arrow_back_ios';
+    background-color: color(none);
+    color: color(forth);
+    font-size: 40px;
+    &:hover {
+      color: color(first);
+      margin-top: 5px;
+      margin-bottom: 0;
+    }  
+    @include tablet {
+      font-size: 30px;
+    }
+    
+  }
+  
+  .accordion--active .arrow:after {
+    content: 'arrow_forward_ios';
+    color: color(forth);
+    margin-top: 5px;
+    &:hover {
+      margin-top: 0px;
+      margin-bottom: 5px;
+    }  
+  }
+  
+  .accordion__panel {
+    max-height: 0;
+    overflow: hidden;
+    position: static;
+    transition: max-height 0.2s ease-out;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .hr {
+    width: 100%;
+    margin: 30px 0 40px 0 ;
+    border-bottom: 4px solid color(third);
+    @include desktop {
+      margin: 20px 0 35px 0 ;
+    }
+  }
+  
+  /**Footer**/
+      #ie-footer {
+      display: none;
+    }
+
+  footer {
+    position: relative;
+    background-color: color(dark);
+    padding: $padding;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    color: color(font-light);
+    display: grid;
+    grid-template:
+    "footer-h"
+    "grid-1"
+    "grid-2"
+    "grid-3"
+    "post-footer";
+    .clean-link {
+      text-decoration: none;
+      color: unset;
+    }
+    #footer-h {
+      margin: 1em 0 0 0;
+      font-weight: normal;
+      grid-area: footer-h;
+    }
+    #footer-grid-1 {
+      grid-area: grid-1;
+      margin: 2em 1em 0 0;
+    }
+    #footer-grid-2 {
+      grid-area: grid-2;
+      margin: 2em 1em 0 0;
+    }
+    #footer-grid-3 {
+      grid-area: grid-3;
+      margin: 2em 1em 0 0;
+    }
+    #post-footer {
+      grid-area: post-footer;
+      color: #ffffff2f;
+      margin: 2em 0 1em 0;
+      font-size: 20px;
+      text-align: center;
+
+    }
+    strong {
+      font-weight: bolder;
+      color: color(forth);
+      font-size: 20px;
+    }
+    p {
+      margin: 10px 0;
+      font-size: 18px;
+      span {
+        padding-left: 39px;
+      }
+    }
+    i {
+      position: relative;
+      top: 5px;
+      margin-right: $margin;
+    }
+
+    @include tablet {
+      grid-template:
+      "footer-h footer-h"
+      "grid-1 grid-2"
+      "grid-3 grid-3"
+      "post-footer post-footer"
+      ;
+      }
+    @include desktop {
+      grid-template:
+      "footer-h footer-h footer-h"
+      "grid-1 grid-2 grid-3"
+      "post-footer post-footer post-footer" 
+      ;
+      }
+    a:hover,a:hover {
+      color: color(first) !important;
+    }
+      font-size: 22px;
+    @include tablet {
+      padding: $padding-tablet;
+    }
+  }
