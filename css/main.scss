@@ -212,7 +212,7 @@ a,h1, h2, h3, h4, .btn {
   z-index: -1 !important;
   @include desktop {
     height: 100vh !important;
-    background-attachment: fixed !important;
+    background-attachment: fixed;
   }
 }
 .bg-text {
@@ -248,7 +248,7 @@ a,h1, h2, h3, h4, .btn {
     }
   @include desktop {
     h1{
-      margin: 17vh 0 15px 0 !important;
+      margin: 20vh 0 15px 0 !important;
       font-size: 90px !important;
     }
     h2 {
@@ -440,6 +440,11 @@ main{
 
 @supports (-ms-ime-align: auto) {
   /* Microsoft EdgeV13&14 CSS styles go here */
+  #header {
+    @include desktop {
+      background-attachment: local !important;
+    }
+  }
   main {
     @include desktop {
       margin: 0 23% 0 23% !important;
@@ -546,6 +551,11 @@ main{
 
 @supports (-ms-accelerator: true) {
    /* Microsoft EdgeV13 CSS styles go here */
+   #header {
+    @include desktop {
+      background-attachment: local !important;
+    }
+  }
    main {
     @include desktop {
       margin: 0 23% 0 23% !important;
@@ -653,6 +663,11 @@ main{
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
    /* IE10 & IE11 CSS styles go here */
+   #header {
+    @include desktop {
+      background-attachment: local !important;
+    }
+  }
    main {
     @include desktop {
       margin: 0 23% 0 23% !important;

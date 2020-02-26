@@ -213,7 +213,7 @@ a, h1, h2, h3, h4, .btn {
 @media (min-width: 1200px) {
   #header {
     height: 100vh !important;
-    background-attachment: fixed !important;
+    background-attachment: fixed;
   }
 }
 
@@ -259,7 +259,7 @@ a, h1, h2, h3, h4, .btn {
 
 @media (min-width: 1200px) {
   .bg-text h1 {
-    margin: 17vh 0 15px 0 !important;
+    margin: 20vh 0 15px 0 !important;
     font-size: 90px !important;
   }
   .bg-text h2 {
@@ -489,6 +489,11 @@ main .btn.active {
 @supports (-ms-ime-align: auto) {
   /* Microsoft EdgeV13&14 CSS styles go here */
   @media (min-width: 1200px) {
+    #header {
+      background-attachment: local !important;
+    }
+  }
+  @media (min-width: 1200px) {
     main {
       margin: 0 23% 0 23% !important;
       padding-top: 40px !important;
@@ -596,6 +601,11 @@ main .btn.active {
 @supports (-ms-accelerator: true) {
   /* Microsoft EdgeV13 CSS styles go here */
   @media (min-width: 1200px) {
+    #header {
+      background-attachment: local !important;
+    }
+  }
+  @media (min-width: 1200px) {
     main {
       margin: 0 23% 0 23% !important;
       padding-top: 40px !important;
@@ -702,6 +712,12 @@ main .btn.active {
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE10 & IE11 CSS styles go here */
+}
+
+@media all and (-ms-high-contrast: none) and (min-width: 1200px), (-ms-high-contrast: active) and (min-width: 1200px) {
+  #header {
+    background-attachment: local !important;
+  }
 }
 
 @media all and (-ms-high-contrast: none) and (min-width: 1200px), (-ms-high-contrast: active) and (min-width: 1200px) {
