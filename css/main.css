@@ -259,7 +259,7 @@ a, h1, h2, h3, h4, .btn {
 
 @media (min-width: 1200px) {
   .bg-text h1 {
-    margin: 20vh 0 15px 0 !important;
+    margin: 25vh 0 15px 0 !important;
     font-size: 90px !important;
   }
   .bg-text h2 {
@@ -288,7 +288,10 @@ main {
   margin-bottom: 2em !important;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "heading" "categories" "buy-button" "books";
+      grid-template-areas: "heading"
+ "categories"
+ "buy-button"
+ "books";
 }
 
 main p {
@@ -311,7 +314,9 @@ main p {
         grid-template-columns: 250px auto;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: "heading        heading" "categories  buy-button" "categories       books";
+        grid-template-areas: "heading        heading"
+ "categories  buy-button"
+ "categories       books";
   }
 }
 
@@ -501,7 +506,10 @@ main .btn.active {
           grid-template-columns: auto;
       -ms-grid-rows: auto;
           grid-template-rows: auto;
-          grid-template-areas: "heading" "buy-button" "categories" "books";
+          grid-template-areas: "heading"
+ "buy-button"
+ "categories"
+ "books";
     }
     main .selectors {
       border-right: none !important;
@@ -613,7 +621,10 @@ main .btn.active {
           grid-template-columns: auto;
       -ms-grid-rows: auto;
           grid-template-rows: auto;
-          grid-template-areas: "heading" "buy-button" "categories" "books";
+          grid-template-areas: "heading"
+ "buy-button"
+ "categories"
+ "books";
     }
     main .selectors {
       border-right: none !important;
@@ -728,7 +739,10 @@ main .btn.active {
         grid-template-columns: auto;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: "heading" "buy-button" "categories" "books";
+        grid-template-areas: "heading"
+ "buy-button"
+ "categories"
+ "books";
   }
   main .selectors {
     border-right: none !important;
@@ -1160,7 +1174,11 @@ footer {
   color: #fff;
   display: -ms-grid;
   display: grid;
-  grid-template: "footer-h" "grid-1" "grid-2" "grid-3" "post-footer";
+  grid-template: "footer-h"
+ "grid-1"
+ "grid-2"
+ "grid-3"
+ "post-footer";
   font-size: 22px;
 }
 
@@ -1221,13 +1239,18 @@ footer i {
 
 @media (min-width: 680px) {
   footer {
-    grid-template: "footer-h footer-h" "grid-1 grid-2" "grid-3 grid-3" "post-footer post-footer";
+    grid-template: "footer-h footer-h"
+ "grid-1 grid-2"
+ "grid-3 grid-3"
+ "post-footer post-footer";
   }
 }
 
 @media (min-width: 1200px) {
   footer {
-    grid-template: "footer-h footer-h footer-h" "grid-1 grid-2 grid-3" "post-footer post-footer post-footer";
+    grid-template: "footer-h footer-h footer-h"
+ "grid-1 grid-2 grid-3"
+ "post-footer post-footer post-footer";
   }
 }
 
