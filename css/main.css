@@ -16,7 +16,7 @@ html {
   text-decoration: none;
   border-radius: 7px;
   display: none;
-  z-index: 3;
+  z-index: 6;
   -webkit-transition: all 0.3s linear;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
